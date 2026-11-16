@@ -38,6 +38,7 @@ Steam 게임 [One Million Coins](https://store.steampowered.com/app/5258340/One_
 - **백신이나 브라우저가 경고해요** → `winhttp.dll`은 모드를 불러오는 로더(Unity Doorstop)라서 경고가 뜰 수 있습니다. 소스는 이 저장소에 모두 공개되어 있습니다.
 - **게임이 업데이트됐더니 일부가 영어로 나와요** → 새로 추가된 문구입니다. [Issues](https://github.com/dong0902hee/OneMillionCoins-Korean/issues)에 스크린샷과 함께 알려 주세요. 게임 폴더의 `Translation\untranslated.txt` 파일을 같이 올려 주시면 더 빨리 고칠 수 있습니다.
 - **영어로 남는 부분** → 강타 효과 `HEAVY STRIKE +N`, 입금기 위 `TOTAL DEPOSITED`는 글자가 아니라 그림이라 바꿀 수 없습니다.
+- **설치 방법을 그림으로 보고 싶어요** → [희셈랩 블로그 글](https://heesamlab.blogspot.com/2026/11/one-million-coins.html), [스팀 한국어 가이드](https://steamcommunity.com/sharedfiles/filedetails/?id=3840722958)
 
 ## 용어
 
@@ -65,7 +66,7 @@ Steam 게임 [One Million Coins](https://store.steampowered.com/app/5258340/One_
 
 ## 출처와 라이선스
 
-- 비공식 팬 번역이며 게임 개발사(ShoXx / Oyen & Umi Games)와 관계없습니다. 게임 파일은 포함되어 있지 않으며 정품 게임이 필요합니다.
+- 비공식 팬 번역이며 게임 개발사(OYU Games)와 관계없습니다. 게임 파일은 포함되어 있지 않으며 정품 게임이 필요합니다.
 - 게임의 원문 텍스트와 상표의 권리는 개발사에 있습니다. 개발사가 요청하면 배포를 중단합니다.
 - 번역 모드 원본: [Zaki-XL/One-Million-Coins-Translation](https://github.com/Zaki-XL/One-Million-Coins-Translation) (작성자가 권리를 주장하지 않음, CC0 상당)
 - 한국어 번역과 로더 수정분: [MIT License](LICENSE)
