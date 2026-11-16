@@ -1,0 +1,1902 @@
+meta:
+  language: "ko"
+  fonts: "Malgun Gothic Bold, Malgun Gothic, Gulim, Dotum, Yu Gothic UI Bold, Segoe UI Bold"
+  display_name: "한국어"
+
+branches:
+  0:
+    name: "맨손"
+    description: "맨손으로 코인을 줍는 강화 분기입니다. 기본 수집력과 스위트 스폿 판정을 강화합니다."
+  1:
+    name: "삽"
+    description: "삽으로 코인을 퍼내는 강화 분기입니다. 넓은 범위에서 대량의 코인을 수집합니다."
+  2:
+    name: "자석"
+    description: "자석으로 코인을 끌어당기는 강화 분기입니다. 주변 코인을 지속적으로 자동 흡인합니다."
+  3:
+    name: "코인 강화"
+    description: "코인 생성, 가치 및 자동 펌프 효율을 높이는 분기입니다."
+  4:
+    name: "민첩성"
+    description: "이동 속도, 스태미나 및 동작 유연성을 높이는 분기입니다."
+  5:
+    name: "고효율"
+    description: "모든 도구의 쿨다운, 충전 속도 및 작업 효율을 높이는 분기입니다."
+  6:
+    name: "궁극 숙련"
+    description: "다양한 궁극 패시브 효과와 자동화 능력을 해금하는 최고위 분기입니다."
+
+upgrades:
+  PickupRadius:
+    name: "수집 범위"
+    description: "더 넓은 범위의 코인을 모을 수 있게 됩니다."
+  ToolSpeed:
+    name: "도구 속도"
+    description: "모든 도구의 동작 사이클을 가속합니다."
+  ToolCapacity:
+    name: "도구 용량"
+    description: "각 도구 동작마다 이동 및 회수할 수 있는 코인 양을 늘립니다."
+  ToolRange:
+    name: "도구 사거리"
+    description: "더 먼 위치에서 깊은 곳의 코인까지 닿을 수 있게 됩니다."
+  DepositSpeed:
+    name: "입금 속도"
+    description: "운반 중인 코인을 금고에 넣는 속도를 높입니다."
+  MovementSpeed:
+    name: "이동 속도"
+    description: "금고 안을 더 빠르게 이동할 수 있게 됩니다."
+  CarryCapacity:
+    name: "소지 용량"
+    description: "주머니 및 모든 소지 가방의 코인 보관 용량을 늘립니다."
+
+items:
+  Shovel:
+    name: "삽"
+    description: "좌클릭을 유지하여 밀집된 코인을 근거리에서 퍼 올립니다."
+  Pouch:
+    name: "파우치"
+    description: "소지 용량 +500, 기본 입금 속도 3배 증가. 더 오래 탐색하고 빠르게 비우세요."
+  TinyMagnet:
+    name: "소형 자석"
+    description: "클릭하여 빠르게 12개의 코인을 당깁니다. 길게 눌러 연속 흡인이 가능합니다."
+  CoinRake:
+    name: "코인 갈퀴"
+    description: "좌클릭을 누른 채 걸어가며 코인을 긁어모읍니다. 이동 중 최대 16개 회수."
+  SpringBoots:
+    name: "스프링 부츠"
+    description: "점프력이 65% 증가합니다. 패시브 장비로 연료나 슬롯이 필요 없습니다."
+  MagneticBoots:
+    name: "마그네틱 부츠"
+    description: "코인 위를 걷기만 해도 0.5초마다 주변 코인을 최대 6개 자동 회수합니다."
+  Magnet:
+    name: "강력 자석"
+    description: "좌클릭을 유지하여 원거리에서 표면의 코인을 강력하게 끌어당깁니다."
+  Backpack:
+    name: "백팩"
+    description: "소지 용량 +3,250. 파우치와 합쳐 총 4,000개까지 소지할 수 있습니다."
+  QuickDump:
+    name: "고속 배출 라이너"
+    description: "모든 호퍼에서의 기본 입금 속도가 8배 빨라집니다."
+  SprintSoles:
+    name: "로켓 밑창"
+    description: "이동 속도가 25% 증가합니다. 금고 왕복 시간을 대폭 단축합니다."
+  RecallCoil:
+    name: "웜홀 코일"
+    description: "우클릭으로 전개 중인 진공 수류탄을 벽 너머에서도 즉시 손으로 회수합니다."
+  Singularity:
+    name: "특이점"
+    description: "초당 3,000개의 회수 속도와 5m 광역 흡인. 흩어진 마지막 코인까지 빨아들입니다."
+  Vortex:
+    name: "골드 윈치"
+    description: "좌클릭으로 광맥에 와이어를 사출하고 길게 눌러 코인을 단숨에 감아올립니다."
+  GravityCoupler:
+    name: "중력 커플러"
+    description: "기본 입금 속도가 600배 빨라집니다. 어느 호퍼에서든 눈 깜짝할 사이에 입금 완료."
+  CoinRailgun:
+    name: "코인 레일건"
+    description: "클릭 또는 길게 눌러 0.45초마다 일직선상으로 90개의 코인을 꿰뚫어 회수합니다."
+  HydraulicCoupler:
+    name: "유압 커플러"
+    description: "기본 입금 속도가 240배 빨라집니다. 대량의 코인도 순식간에 입금 가능합니다."
+  DrillVac:
+    name: "드릴 진공기"
+    description: "길게 눌러 발밑의 코인을 채굴: 이동하면서 펄스당 100개를 회수합니다."
+  HopperPack:
+    name: "호퍼 팩"
+    description: "소지 용량 +11,000. 이전 가방들과 합쳐 총 15,000개까지 소지 가능합니다."
+
+ui:
+  "IMPROVEMENT": "능력 강화"
+  "MASTERY": "마스터리"
+  "NEW MECHANIC": "새 기능 해금"
+  "START": "시작"
+  "OPTIONS": "설정"
+  "CREDITS":
+    text: "크레딧"
+    enabled: true
+    scale: 0.8
+
+  "LEADERBOARDS":
+    text: "순위표"
+    enabled: true
+    scale: 0.8
+
+  "QUIT":
+    text: "종료"
+    enabled: true
+    scale: 1.0
+
+  "BACK": "뒤로"
+  "CONFIRM": "확인"
+  "CANCEL": "취소"
+  "BUY": "구매"
+  "UPGRADE": "업그레이드"
+  "PRICE": "가격"
+  "COST": "비용"
+  "SOLD_OUT": "매진"
+  "MAX_LEVEL": "최대 레벨"
+  "BANKED": "보관 코인"
+  "COLLECT": "수집"
+  "LOCKED": "잠김"
+  "Continue":
+    text: "이어하기"
+    enabled: true
+    scale: 1.0
+
+  "New Game":
+    text: "새 게임"
+    enabled: true
+    scale: 1.0
+
+  "Quit Game":
+    text: "게임 종료"
+    enabled: true
+    scale: 1.0
+
+  "Credits":
+    text: "크레딧"
+    enabled: true
+    scale: 0.8
+
+  "Leaderboards":
+    text: "순위표"
+    enabled: true
+    scale: 0.85
+
+  "Back": "뒤로"
+  "Back  [Esc]": "뒤로 [Esc]"
+  "Cancel": "취소"
+  "Cancel  [Esc]": "취소 [Esc]"
+  "Refresh": "새로고침"
+  "Confirm": "확인"
+  "Start a new game?": "새 게임을 시작하시겠습니까?"
+  "This replaces your saved progress for ": "다음 저장 데이터를 덮어씁니다: "
+  "SKILL TREE · NEW GAME": "스킬 트리 · 새 게임"
+  "Top hoarders": "수집 랭킹"
+  "Fastest runs": "스피드런 랭킹"
+  "GLOBAL": "글로벌"
+  "FRIENDS": "친구"
+  "TOP 10": "상위 10위"
+  "TOP 100": "상위 100위"
+  "TOP 1,000": "상위 1,000위"
+  "RANK": "순위"
+  "PLAYER": "플레이어"
+  "TIME": "시간"
+  "COINS BANKED": "보관 코인"
+  "Total banked: ": "총 보관량: "
+  "YOUR PERSONAL BESTS": "개인 최고 기록"
+  "LOCAL PLAY": "로컬 플레이"
+  "Offline player": "오프라인 플레이어"
+  "Lifetime coins banked across all runs": "모든 플레이 누적 보관 코인 수"
+  "Offline · saved locally": "오프라인 · 로컬에 저장됨"
+  "Loading banking history…": "보관 기록 불러오는 중…"
+  "Banking history needs recovery": "보관 기록 복구가 필요합니다"
+  "Loading…": "불러오는 중…"
+  "Refreshing…": "새로고침 중…"
+  "Refresh failed": "새로고침 실패"
+  "Loading rankings...": "순위표 불러오는 중…"
+  "No times yet": "기록 없음"
+  "No banked totals yet": "보관 기록 없음"
+  "Rankings unavailable": "순위표를 사용할 수 없음"
+  "Invalid scores hidden": "유효하지 않은 점수 숨김"
+  "Rounded down to whole thousands.": "천 단위 미만은 버림하여 표시됩니다."
+  "YOU  ·  Global #{0:N0}": "나 · 글로벌 #{0:N0}"
+  "Version ": "버전 "
+  " · Proficiencies": " · 숙련도"
+  "No proficiencies available yet.": "사용 가능한 숙련도가 없습니다."
+  "{0} points available": "{0} 포인트 사용 가능"
+  "Learn · ": "습득 · "
+  " points": " 포인트"
+  "Buy": "구매"
+  "Upgrade": "업그레이드"
+  "Price": "가격"
+  "Cost": "비용"
+  "SOLD OUT": "매진"
+  "Sold Out": "매진"
+  "MAX LEVEL": "최대 레벨"
+  "Max Level": "최대 레벨"
+  "Locked": "잠김"
+  "Controls": "조작 설정"
+  "CONTROLS": "조작 설정"
+  "Keyboard & mouse": "키보드 & 마우스"
+  "KEYBOARD & MOUSE": "키보드 & 마우스"
+  "Controller": "컨트롤러"
+  "CONTROLLER": "컨트롤러"
+  "Gameplay": "게임플레이"
+  "GAMEPLAY": "게임플레이"
+  "Menus & skill tree": "메뉴 & 스킬 트리"
+  "MENUS & SKILL TREE": "메뉴 & 스킬 트리"
+  "Change": "변경"
+  "CHANGE": "변경"
+  "Reset all bindings": "모든 키 설정 초기화"
+  "RESET ALL BINDINGS": "모든 키 설정 초기화"
+  "Changes save automatically. Mouse pointer and wheel remain available.": "변경 사항은 자동 저장됩니다. 마우스 커서와 휠은 계속 사용할 수 있습니다."
+  "Move": "이동"
+  "Look stick": "시점 스틱"
+  "Jump / Hover": "점프 / 호버"
+  "Primary tool": "주 도구"
+  "Secondary tool": "보조 도구"
+  "Interact / Deposit": "상호작용 / 입금"
+  "Pack Pocket Bank": "포켓 뱅크 회수"
+  "Open skill tree": "스킬 트리 열기"
+  "Pause": "일시 정지"
+  "Menu navigation · D-pad": "메뉴 이동 · 십자키"
+  "Menu navigation · Stick": "메뉴 이동 · 스틱"
+  "Confirm / Learn": "결정 / 습득"
+  "Back / Cancel": "뒤로 / 취소"
+  "Pin upgrade": "강화 고정"
+  "Inspect prerequisite": "선행 조건 확인"
+  "Focus tree header": "트리 헤더 선택"
+  "Focus tree nodes": "트리 노드 선택"
+  "Reset tree view": "트리 시점 초기화"
+  "Scroll details": "상세 스크롤"
+  "Switch tool": "도구 전환"
+  "Unbound": "미설정"
+  "Press a key or mouse button": "키 또는 마우스 버튼을 누르세요"
+  "Press a key": "키를 누르세요"
+  "Press a controller button": "컨트롤러 버튼을 누르세요"
+  "Move a stick or D-pad": "스틱 또는 십자키를 움직이세요"
+  "Reset controls?": "조작 설정을 초기화하시겠습니까?"
+  "Restore default gameplay and menu bindings for keyboard, mouse, and controller?": "키보드, 마우스, 컨트롤러의 모든 조작 설정을 기본값으로 되돌리시겠습니까?"
+  "Input already used": "이미 사용 중인 입력입니다"
+  "These controls need different inputs. Swap them or cancel.": "다른 입력 키를 설정하거나 맞바꾸거나 취소하세요."
+  "Swap the inputs, keep both actions on this input, or cancel.": "입력을 맞바꾸거나 둘 다 할당하거나 취소하세요."
+  "Swap": "맞바꾸기"
+  "Use anyway": "그대로 사용"
+  "SETTINGS": "설정"
+  "Settings": "설정"
+  "MOUSE SENSITIVITY": "마우스 감도"
+  "CONTROLLER SENSITIVITY": "컨트롤러 감도"
+  "Invert vertical look": "수직 시점 반전"
+  "Maximum frame rate": "최대 프레임레이트"
+  "WINDOW MODE": "창 모드"
+  "Windowed": "창 모드"
+  "Borderless windowed": "테두리 없는 창"
+  "Borderless": "테두리 없음"
+  "Fullscreen": "전체 화면"
+  "Reset settings": "설정 초기화"
+  "Off": "끄기"
+  "On": "켜기"
+  "MASTER": "마스터 볼륨"
+  "MUSIC": "음악 볼륨"
+  "EFFECTS": "효과음"
+  "CHUTES": "슈트"
+  "PROFICIENCIES": "숙련도"
+  "Proficiencies": "숙련도"
+  "STATS": "능력치"
+  "Stats": "능력치"
+  "CLOSE": "닫기"
+  "Close": "닫기"
+  "QUICK BUY": "빠른 구매"
+  "QuickBuy": "빠른 구매"
+  "Learn": "습득"
+  "Navigate": "이동"
+  "Menu": "메뉴"
+  "Prerequisite": "선행 조건"
+  "Learned": "습득 완료"
+  "Locks ": "배타 잠금: "
+  "Requires ": "필요 조건: "
+  "Hands <size=16>(Tool)</size>": "맨손 <size=16>(도구)</size>"
+  "Shovel <size=16>(Tool)</size>": "삽 <size=16>(도구)</size>"
+  "Magnet <size=16>(Tool)</size>": "자석 <size=16>(도구)</size>"
+  "HANDS (TOOL)": "맨손 (도구)"
+  "SHOVEL (TOOL)": "삽 (도구)"
+  "MAGNET (TOOL)": "자석 (도구)"
+  "BAGS": "가방"
+  "DEPOSITS": "입금"
+  "UTILITY": "유틸리티"
+  "Learn prerequisites to see your stat changes.": "능력치 변화를 보려면 선행 스킬을 습득하세요."
+  "Click node to learn": "클릭하여 습득"
+  "Press submit to learn": "결정 버튼으로 습득"
+  "with your upgrades": "적용 중인 강화"
+  "Grip coin limit": "그립 수집 한도"
+  "Grip radius": "그립 반경"
+  "Sweet spot starts at": "스위트 스폿 시작"
+  "Sweet spot length": "스위트 스폿 지속 시간"
+  "Normal pickups resume after": "일반 수집 복귀 시간"
+  "Recharge after a miss": "실패 후 재충전"
+  "Recharge": "재충전 시간"
+  "All tool speed": "모든 도구 속도"
+  "Hands coins per grab": "맨손 1회당 수집량"
+  "Tool speed": "도구 속도"
+  "Pickup radius": "수집 범위"
+  "Tool reach": "도구 사거리"
+  "Bag capacity": "가방 용량"
+  "Deposit speed": "입금 속도"
+  "Chain lightning": "연쇄 번개"
+
+  "Paused": "일시 정지"
+  "PAUSED": "일시 정지"
+  "paused": "일시 정지"
+  "Resume": "계속하기"
+  "RESUME": "계속하기"
+  "resume": "계속하기"
+  "Main menu": "메인 메뉴"
+  "MAIN MENU": "메인 메뉴"
+  "main menu": "메인 메뉴"
+  "Save game": "게임 저장"
+  "SAVE GAME": "게임 저장"
+  "save game": "게임 저장"
+  "Save your progress": "진행 상황 저장"
+  "SAVE YOUR PROGRESS": "진행 상황 저장"
+  "save your progress": "진행 상황 저장"
+  "Unstuck (+60s penalty)": "끼임 탈출 (+60초 페널티)"
+  "Flow": "플로우"
+  "FLOW": "플로우"
+  "flow": "플로우"
+  "Bag": "가방"
+  "BAG": "가방"
+  "bag": "가방"
+  "Bag full": "가방 가득 참"
+  "BAG FULL": "가방 가득 참"
+  "bag full": "가방 가득 참"
+  "Bag empty": "가방 비었음"
+  "BAG EMPTY": "가방 비었음"
+  "bag empty": "가방 비었음"
+  "Quit game?": "게임을 종료하시겠습니까?"
+  "Return to the main menu?": "메인 메뉴로 돌아가시겠습니까?"
+  "Leave without saving": "저장하지 않고 나가기"
+  "LEAVE WITHOUT SAVING": "저장하지 않고 나가기"
+  "leave without saving": "저장하지 않고 나가기"
+  "Save and quit": "저장 후 종료"
+  "SAVE AND QUIT": "저장 후 종료"
+  "save and quit": "저장 후 종료"
+  "Save and return to menu": "저장 후 메뉴로"
+  "SAVE AND RETURN TO MENU": "저장 후 메뉴로"
+  "save and return to menu": "저장 후 메뉴로"
+  "Save failed · Please retry": "저장 실패 · 다시 시도하세요"
+  "Save failed. Your session is still open; retry saving before leaving.": "저장에 실패했습니다. 세션은 유지 중이니 나가기 전에 다시 저장해 주세요."
+  "Progress saved": "진행 상황 저장됨"
+  "PROGRESS SAVED": "진행 상황 저장됨"
+  "progress saved": "진행 상황 저장됨"
+  "Test progress saved": "테스트 진행 상황 저장됨"
+  "TEST PROGRESS SAVED": "테스트 진행 상황 저장됨"
+  "test progress saved": "테스트 진행 상황 저장됨"
+  "UNSTUCK · +60 seconds to your final time": "끼임 탈출 · 최종 기록에 +60초"
+  "UNSTUCK · +60 seconds · Save failed; please retry saving": "끼임 탈출 · +60초 · 저장 실패, 다시 저장해 주세요"
+  "Main menu scene is missing from this build.": "이 빌드에 메인 메뉴 씬이 없습니다."
+  "Reset": "초기화"
+  "RESET": "초기화"
+  "reset": "초기화"
+  "Select": "선택"
+  "SELECT": "선택"
+  "select": "선택"
+  "Scroll": "스크롤"
+  "SCROLL": "스크롤"
+  "scroll": "스크롤"
+  "Up": "위"
+  "Down": "아래"
+  "Left": "왼쪽"
+  "Right": "오른쪽"
+  "Arrows": "방향키"
+  "Space": "스페이스"
+  "Shift": "Shift"
+  "Enter": "Enter"
+  "Numpad Enter": "숫자패드 Enter"
+  "Wheel up": "휠 위로"
+  "Wheel down": "휠 아래로"
+  "D-pad": "십자키"
+  "D-PAD": "십자키"
+  "d-pad": "십자키"
+  "D-pad up": "십자키 위"
+  "D-PAD UP": "십자키 위"
+  "d-pad up": "십자키 위"
+  "D-pad down": "십자키 아래"
+  "D-PAD DOWN": "십자키 아래"
+  "d-pad down": "십자키 아래"
+  "D-pad left": "십자키 왼쪽"
+  "D-pad right": "십자키 오른쪽"
+  "Move · Up": "이동 · 위"
+  "Move · Down": "이동 · 아래"
+  "Move · Left": "이동 · 왼쪽"
+  "Move · Right": "이동 · 오른쪽"
+  "Menu navigation": "메뉴 이동"
+  "MENU NAVIGATION": "메뉴 이동"
+  "menu navigation": "메뉴 이동"
+  "Menu navigation · Up": "메뉴 이동 · 위"
+  "Menu navigation · Down": "메뉴 이동 · 아래"
+  "Menu navigation · Left": "메뉴 이동 · 왼쪽"
+  "Menu navigation · Right": "메뉴 이동 · 오른쪽"
+  "Scroll details / Lists": "상세 / 목록 스크롤"
+  "SCROLL DETAILS / LISTS": "상세 / 목록 스크롤"
+  "scroll details / lists": "상세 / 목록 스크롤"
+  "Scroll details / Lists · Up": "상세 / 목록 스크롤 · 위"
+  "Scroll details / Lists · Down": "상세 / 목록 스크롤 · 아래"
+  "Confirm / Learn · Numpad": "결정 / 습득 · 숫자패드"
+  "Learn pinned upgrade": "고정한 강화 습득"
+  "LEARN PINNED UPGRADE": "고정한 강화 습득"
+  "learn pinned upgrade": "고정한 강화 습득"
+  "Learn pinned upgrade · Button": "고정한 강화 습득 · 버튼"
+  "Learn pinned upgrade · Modifier": "고정한 강화 습득 · 보조키"
+  "Next tool": "다음 도구"
+  "NEXT TOOL": "다음 도구"
+  "next tool": "다음 도구"
+  "Previous tool": "이전 도구"
+  "PREVIOUS TOOL": "이전 도구"
+  "previous tool": "이전 도구"
+  "Throw grenade": "수류탄 던지기"
+  "THROW GRENADE": "수류탄 던지기"
+  "throw grenade": "수류탄 던지기"
+  "Equip Hands": "맨손 장착"
+  "EQUIP HANDS": "맨손 장착"
+  "equip hands": "맨손 장착"
+  "Equip Shovel": "삽 장착"
+  "EQUIP SHOVEL": "삽 장착"
+  "equip shovel": "삽 장착"
+  "Equip Magnet": "자석 장착"
+  "EQUIP MAGNET": "자석 장착"
+  "equip magnet": "자석 장착"
+  "Equip Pocket Bank": "포켓 뱅크 장착"
+  "EQUIP POCKET BANK": "포켓 뱅크 장착"
+  "equip pocket bank": "포켓 뱅크 장착"
+  "Equip Tiny Magnet": "소형 자석 장착"
+  "EQUIP TINY MAGNET": "소형 자석 장착"
+  "equip tiny magnet": "소형 자석 장착"
+  "Equip Vacuum": "진공기 장착"
+  "EQUIP VACUUM": "진공기 장착"
+  "equip vacuum": "진공기 장착"
+  "Equip tool": "도구 장착"
+  "EQUIP TOOL": "도구 장착"
+  "equip tool": "도구 장착"
+  "Default controls restored.": "기본 조작 설정으로 복원했습니다."
+  "Rebinding cancelled.": "키 변경을 취소했습니다."
+  "Saved controls could not be read. Defaults restored.": "저장된 조작 설정을 읽을 수 없어 기본값으로 복원했습니다."
+  "Unsupported input for this binding.": "이 동작에 사용할 수 없는 입력입니다."
+  "Click": "클릭"
+  "CLICK": "클릭"
+  "click": "클릭"
+  "Hold": "길게 누르기"
+  "HOLD": "길게 누르기"
+  "hold": "길게 누르기"
+  "Click to collect": "클릭하여 수집"
+  "CLICK TO COLLECT": "클릭하여 수집"
+  "click to collect": "클릭하여 수집"
+  "Hold to collect": "길게 눌러 수집"
+  "HOLD TO COLLECT": "길게 눌러 수집"
+  "hold to collect": "길게 눌러 수집"
+  "Click left mouse to collect": "좌클릭하여 수집"
+  "Hold left mouse to collect": "좌클릭을 길게 눌러 수집"
+  "Click or hold to snap gold": "클릭 또는 길게 눌러 금 끌어오기"
+  "CLICK OR HOLD TO SNAP GOLD": "클릭 또는 길게 눌러 금 끌어오기"
+  "click or hold to snap gold": "클릭 또는 길게 눌러 금 끌어오기"
+  "Hold for Jackhammer": "길게 눌러 잭해머"
+  "HOLD FOR JACKHAMMER": "길게 눌러 잭해머"
+  "hold for jackhammer": "길게 눌러 잭해머"
+  "Hold for power scoop": "길게 눌러 파워 퍼담기"
+  "HOLD FOR POWER SCOOP": "길게 눌러 파워 퍼담기"
+  "hold for power scoop": "길게 눌러 파워 퍼담기"
+  "Hold for two-handed grip": "길게 눌러 양손 그립"
+  "HOLD FOR TWO-HANDED GRIP": "길게 눌러 양손 그립"
+  "hold for two-handed grip": "길게 눌러 양손 그립"
+  "Release for power scoop": "떼면 파워 퍼담기"
+  "RELEASE FOR POWER SCOOP": "떼면 파워 퍼담기"
+  "release for power scoop": "떼면 파워 퍼담기"
+  "Power scoop cancelled: released before full charge": "파워 퍼담기 취소: 완전히 충전되기 전에 뗐습니다"
+  "Charging leap": "도약 충전 중"
+  "CHARGING LEAP": "도약 충전 중"
+  "charging leap": "도약 충전 중"
+  "Charging power scoop": "파워 퍼담기 충전 중"
+  "CHARGING POWER SCOOP": "파워 퍼담기 충전 중"
+  "charging power scoop": "파워 퍼담기 충전 중"
+  "Landing slam": "착지 내려찍기"
+  "LANDING SLAM": "착지 내려찍기"
+  "landing slam": "착지 내려찍기"
+  "Two-handed grip": "양손 그립"
+  "TWO-HANDED GRIP": "양손 그립"
+  "two-handed grip": "양손 그립"
+  "Two-handed grip lost": "양손 그립 실패"
+  "TWO-HANDED GRIP LOST": "양손 그립 실패"
+  "two-handed grip lost": "양손 그립 실패"
+  "Hold to chain lightning": "길게 눌러 연쇄 번개"
+  "HOLD TO CHAIN LIGHTNING": "길게 눌러 연쇄 번개"
+  "hold to chain lightning": "길게 눌러 연쇄 번개"
+  "Hold to drill down": "길게 눌러 아래로 드릴"
+  "HOLD TO DRILL DOWN": "길게 눌러 아래로 드릴"
+  "hold to drill down": "길게 눌러 아래로 드릴"
+  "Hold to latch onto gold": "길게 눌러 금에 걸기"
+  "HOLD TO LATCH ONTO GOLD": "길게 눌러 금에 걸기"
+  "hold to latch onto gold": "길게 눌러 금에 걸기"
+  "Hold to pack up": "길게 눌러 회수"
+  "HOLD TO PACK UP": "길게 눌러 회수"
+  "hold to pack up": "길게 눌러 회수"
+  "Hold to preview placement": "길게 눌러 설치 위치 미리보기"
+  "HOLD TO PREVIEW PLACEMENT": "길게 눌러 설치 위치 미리보기"
+  "hold to preview placement": "길게 눌러 설치 위치 미리보기"
+  "Release to place": "떼서 설치"
+  "RELEASE TO PLACE": "떼서 설치"
+  "release to place": "떼서 설치"
+  "Release to equip": "떼서 장착"
+  "RELEASE TO EQUIP": "떼서 장착"
+  "release to equip": "떼서 장착"
+  "Hold F beside the mini-bank to pack it up": "미니 뱅크 옆에서 F를 길게 눌러 회수"
+  "HOLD F BESIDE THE MINI-BANK TO PACK IT UP": "미니 뱅크 옆에서 F를 길게 눌러 회수"
+  "hold f beside the mini-bank to pack it up": "미니 뱅크 옆에서 F를 길게 눌러 회수"
+  "Hold to deposit · 75% speed": "길게 눌러 입금 · 속도 75%"
+  "Hold to deposit · half speed": "길게 눌러 입금 · 절반 속도"
+  "Packing": "회수 중"
+  "PACKING": "회수 중"
+  "packing": "회수 중"
+  "Packing up": "회수 중"
+  "PACKING UP": "회수 중"
+  "packing up": "회수 중"
+  "Cooling down": "냉각 중"
+  "COOLING DOWN": "냉각 중"
+  "cooling down": "냉각 중"
+  "Recharging": "재충전 중"
+  "RECHARGING": "재충전 중"
+  "recharging": "재충전 중"
+  "Heat": "열"
+  "HEAT": "열"
+  "heat": "열"
+  "Pressure unstable": "압력 불안정"
+  "PRESSURE UNSTABLE": "압력 불안정"
+  "pressure unstable": "압력 불안정"
+  "Recall the deployed grenade first": "먼저 설치한 수류탄을 회수하세요"
+  "RECALL THE DEPLOYED GRENADE FIRST": "먼저 설치한 수류탄을 회수하세요"
+  "recall the deployed grenade first": "먼저 설치한 수류탄을 회수하세요"
+  "Aim above a solid surface": "단단한 바닥 위를 조준하세요"
+  "AIM ABOVE A SOLID SURFACE": "단단한 바닥 위를 조준하세요"
+  "aim above a solid surface": "단단한 바닥 위를 조준하세요"
+  "Aim at gold to set your grip": "금을 조준해 그립을 잡으세요"
+  "AIM AT GOLD TO SET YOUR GRIP": "금을 조준해 그립을 잡으세요"
+  "aim at gold to set your grip": "금을 조준해 그립을 잡으세요"
+  "Aim at gold within magnet reach": "자석 사거리 안의 금을 조준하세요"
+  "AIM AT GOLD WITHIN MAGNET REACH": "자석 사거리 안의 금을 조준하세요"
+  "aim at gold within magnet reach": "자석 사거리 안의 금을 조준하세요"
+  "Needs a static surface below": "아래에 고정된 바닥이 필요합니다"
+  "NEEDS A STATIC SURFACE BELOW": "아래에 고정된 바닥이 필요합니다"
+  "needs a static surface below": "아래에 고정된 바닥이 필요합니다"
+  "Clear the coins around this board": "이 보드 주변의 코인을 치우세요"
+  "CLEAR THE COINS AROUND THIS BOARD": "이 보드 주변의 코인을 치우세요"
+  "clear the coins around this board": "이 보드 주변의 코인을 치우세요"
+  "Uncover the board and its landing": "보드와 착지 지점을 드러내세요"
+  "UNCOVER THE BOARD AND ITS LANDING": "보드와 착지 지점을 드러내세요"
+  "uncover the board and its landing": "보드와 착지 지점을 드러내세요"
+  "Uncover the console to deposit": "입금하려면 콘솔을 드러내세요"
+  "Hopper is buried": "호퍼가 묻혀 있습니다"
+  "Deposit gold at a cart": "카트에 금을 입금하세요"
+  "DEPOSIT GOLD AT A CART": "카트에 금을 입금하세요"
+  "deposit gold at a cart": "카트에 금을 입금하세요"
+  "Deposit gold at a hopper": "호퍼에 금을 입금하세요"
+  "DEPOSIT GOLD AT A HOPPER": "호퍼에 금을 입금하세요"
+  "deposit gold at a hopper": "호퍼에 금을 입금하세요"
+  "Bank your carried coins to make room": "소지한 코인을 입금해 공간을 확보하세요"
+  "BANK YOUR CARRIED COINS TO MAKE ROOM": "소지한 코인을 입금해 공간을 확보하세요"
+  "bank your carried coins to make room": "소지한 코인을 입금해 공간을 확보하세요"
+  "Room for your next upgrade.": "다음 강화를 위한 공간."
+  "Spend your proficiency point": "숙련도 포인트를 사용하세요"
+  "SPEND YOUR PROFICIENCY POINT": "숙련도 포인트를 사용하세요"
+  "spend your proficiency point": "숙련도 포인트를 사용하세요"
+  "Your first tool is waiting.": "첫 번째 도구가 기다리고 있습니다."
+  "Final coin podium rising — stand clear": "마지막 코인 단상이 올라옵니다 — 물러서세요"
+  "Recover the remaining spilled gold before delivering the final coin": "마지막 코인을 전달하기 전에 쏟아진 금을 모두 회수하세요"
+  "Opening lid…": "뚜껑 여는 중…"
+  "E  •  Open the final coin lid": "E  •  마지막 코인 뚜껑 열기"
+  "E  •  Take the final coin": "E  •  마지막 코인 가져가기"
+  "STEP FULLY INSIDE THE LIFT TO TRAVEL": "이동하려면 리프트 안으로 완전히 들어가세요"
+  "Step Fully Inside The Lift To Travel": "이동하려면 리프트 안으로 완전히 들어가세요"
+  "step fully inside the lift to travel": "이동하려면 리프트 안으로 완전히 들어가세요"
+  "CLEAR THE GOLD FROM THE SHAFT AND LANDING FIRST": "먼저 승강로와 착지 지점의 금을 치우세요"
+  "Clear The Gold From The Shaft And Landing First": "먼저 승강로와 착지 지점의 금을 치우세요"
+  "clear the gold from the shaft and landing first": "먼저 승강로와 착지 지점의 금을 치우세요"
+  "1,000,000 coins collected. Every one delivered.": "코인 1,000,000개 수집. 한 개도 빠짐없이 전달했습니다."
+  "Every last coin.": "마지막 한 개까지."
+  "Keep Playing": "계속 플레이"
+  "KEEP PLAYING": "계속 플레이"
+  "keep playing": "계속 플레이"
+  "Start new game": "새 게임 시작"
+  "START NEW GAME": "새 게임 시작"
+  "start new game": "새 게임 시작"
+  "View final build": "최종 빌드 보기"
+  "VIEW FINAL BUILD": "최종 빌드 보기"
+  "view final build": "최종 빌드 보기"
+  "Your final build": "최종 빌드"
+  "YOUR FINAL BUILD": "최종 빌드"
+  "your final build": "최종 빌드"
+  "YOUR COMPLETION TIME": "완료 기록"
+  "Your Completion Time": "완료 기록"
+  "your completion time": "완료 기록"
+  "Back to results  [Esc]": "결과로 돌아가기  [Esc]"
+  "Do you want to delete the save file and start a new game?": "저장 파일을 삭제하고 새 게임을 시작하시겠습니까?"
+  "This replaces your saved progress for Mine.": "광산의 저장 데이터를 덮어씁니다."
+  "This replaces your saved progress for Vault.": "금고의 저장 데이터를 덮어씁니다."
+  "Could not start a new game. Your current session is still open.": "새 게임을 시작할 수 없습니다. 현재 세션은 유지됩니다."
+  "The game scene could not be loaded.": "게임 씬을 불러올 수 없습니다."
+  "This scene cannot be restarted.": "이 씬은 다시 시작할 수 없습니다."
+  "Keep Playing refills now.\nFurther clears do not count toward leaderboards.": "계속 플레이하면 지금 다시 채워집니다.\n이후 클리어는 순위표에 반영되지 않습니다."
+  "Freeplay · Keep your build and earn more points. Leaderboards are disabled.": "자유 플레이 · 빌드를 유지하고 포인트를 더 얻습니다. 순위표는 비활성화됩니다."
+  "Freeplay clears do not count toward timed leaderboards.": "자유 플레이 클리어는 기록 순위표에 반영되지 않습니다."
+  "Development levels do not count toward timed leaderboards.": "개발용 레벨은 기록 순위표에 반영되지 않습니다."
+  "Could not start freeplay. Your completed run is still open.": "자유 플레이를 시작할 수 없습니다. 완료한 플레이는 유지됩니다."
+  "COULD NOT START FREEPLAY — YOUR COMPLETED RUN IS STILL OPEN": "자유 플레이를 시작할 수 없음 — 완료한 플레이는 유지됩니다"
+  "Could not prepare the next vault. Your completed run is still open; please retry Keep Playing.": "다음 금고를 준비할 수 없습니다. 완료한 플레이는 유지되니 계속 플레이를 다시 시도하세요."
+  "NOT SUBMITTED TO LEADERBOARDS": "순위표에 제출되지 않음"
+  "Not Submitted To Leaderboards": "순위표에 제출되지 않음"
+  "not submitted to leaderboards": "순위표에 제출되지 않음"
+  "Personal best queued for Steam.": "개인 최고 기록이 Steam 전송 대기 중입니다."
+  "Personal best uploaded to Steam.": "개인 최고 기록을 Steam에 업로드했습니다."
+  "Uploading your personal best…": "개인 최고 기록 업로드 중…"
+  "Upload pending. Your time is saved locally and will retry.": "업로드 대기 중. 기록은 로컬에 저장되어 있으며 다시 시도합니다."
+  "Your faster Steam record was kept.": "더 빠른 Steam 기록이 유지되었습니다."
+  "This completion has not been submitted to Steam.": "이 완료 기록은 Steam에 제출되지 않았습니다."
+  "This run is not eligible for Steam rankings.": "이 플레이는 Steam 순위 대상이 아닙니다."
+  "Steam is offline. Connect to Steam, then Retry.": "Steam이 오프라인입니다. Steam에 연결한 뒤 다시 시도하세요."
+  "Steam is unavailable. This run has not been submitted.": "Steam을 사용할 수 없습니다. 이 플레이는 제출되지 않았습니다."
+  "Steam could not load the rankings. Retry.": "Steam에서 순위를 불러오지 못했습니다. 다시 시도하세요."
+  "Could not load all rankings. Retry.": "순위를 모두 불러오지 못했습니다. 다시 시도하세요."
+  "Loading rankings…": "순위표 불러오는 중…"
+  "Open the leaderboard to load banked totals.": "순위표를 열면 보관 기록을 불러옵니다."
+  "Open the leaderboard to load times.": "순위표를 열면 기록을 불러옵니다."
+  "Personal bests · Fastest first": "개인 최고 기록 · 빠른 순"
+  "Lifetime banked coins · Most first": "누적 보관 코인 · 많은 순"
+  "INVALID HIDDEN": "무효 기록 숨김"
+  "Invalid Hidden": "무효 기록 숨김"
+  "invalid hidden": "무효 기록 숨김"
+  "Coins saved · Syncing with Steam…": "코인 저장됨 · Steam과 동기화 중…"
+  "Saved locally · Cloud unavailable": "로컬에 저장됨 · 클라우드 사용 불가"
+  "Sync pending · saved locally": "동기화 대기 중 · 로컬에 저장됨"
+  "Up to date": "최신 상태"
+  "UP TO DATE": "최신 상태"
+  "up to date": "최신 상태"
+  "SAVE FAILED — PROGRESS IS NOT ON DISK": "저장 실패 — 진행 상황이 디스크에 없습니다"
+  "SAVE RECOVERED FROM BACKUP": "백업에서 저장 데이터를 복구했습니다"
+  "SAVE IS FROM A NEWER GAME VERSION": "더 새로운 게임 버전의 저장 데이터입니다"
+  "Banking history could not be saved": "보관 기록을 저장할 수 없습니다"
+  "BANKING HISTORY COULD NOT BE SAVED": "보관 기록을 저장할 수 없습니다"
+  "banking history could not be saved": "보관 기록을 저장할 수 없습니다"
+  "Banking account needs recovery": "보관 계정 복구가 필요합니다"
+  "BANKING ACCOUNT NEEDS RECOVERY": "보관 계정 복구가 필요합니다"
+  "banking account needs recovery": "보관 계정 복구가 필요합니다"
+  "LIFETIME COIN TOTAL COULD NOT BE SAVED": "누적 코인 합계를 저장할 수 없습니다"
+  "Saved run belongs to another account": "저장된 플레이가 다른 계정의 것입니다"
+  "SAVED RUN BELONGS TO ANOTHER ACCOUNT": "저장된 플레이가 다른 계정의 것입니다"
+  "saved run belongs to another account": "저장된 플레이가 다른 계정의 것입니다"
+  "Tools": "도구"
+  "TOOLS": "도구"
+  "tools": "도구"
+  "Tree": "트리"
+  "TREE": "트리"
+  "tree": "트리"
+  "Capacity": "용량"
+  "CAPACITY": "용량"
+  "capacity": "용량"
+  "Coverage": "범위"
+  "COVERAGE": "범위"
+  "coverage": "범위"
+  "Reach": "사거리"
+  "REACH": "사거리"
+  "reach": "사거리"
+  "Rhythm": "리듬"
+  "RHYTHM": "리듬"
+  "rhythm": "리듬"
+  "Drainage": "배출"
+  "DRAINAGE": "배출"
+  "drainage": "배출"
+  "Discharges": "방전"
+  "DISCHARGES": "방전"
+  "discharges": "방전"
+  "Overdrive": "오버드라이브"
+  "OVERDRIVE": "오버드라이브"
+  "overdrive": "오버드라이브"
+  "Chain power": "연쇄 위력"
+  "CHAIN POWER": "연쇄 위력"
+  "chain power": "연쇄 위력"
+  "Heavy strikes": "강타"
+  "HEAVY STRIKES": "강타"
+  "heavy strikes": "강타"
+  "Heavy-strike strength": "강타 위력"
+  "HEAVY-STRIKE STRENGTH": "강타 위력"
+  "heavy-strike strength": "강타 위력"
+  "Lightning strength": "번개 위력"
+  "LIGHTNING STRENGTH": "번개 위력"
+  "lightning strength": "번개 위력"
+  "Wider scoops": "더 넓은 퍼담기"
+  "WIDER SCOOPS": "더 넓은 퍼담기"
+  "wider scoops": "더 넓은 퍼담기"
+  "Easy unloading": "손쉬운 입금"
+  "EASY UNLOADING": "손쉬운 입금"
+  "easy unloading": "손쉬운 입금"
+  "Carry more": "더 많이 운반"
+  "CARRY MORE": "더 많이 운반"
+  "carry more": "더 많이 운반"
+  "Automatic banking": "자동 보관"
+  "AUTOMATIC BANKING": "자동 보관"
+  "automatic banking": "자동 보관"
+  "Automatic drainage": "자동 배출"
+  "AUTOMATIC DRAINAGE": "자동 배출"
+  "automatic drainage": "자동 배출"
+  "Station network": "입금소 네트워크"
+  "STATION NETWORK": "입금소 네트워크"
+  "station network": "입금소 네트워크"
+  "Banks & Gold Rush": "뱅크 & 골드 러시"
+  "BANKS & GOLD RUSH": "뱅크 & 골드 러시"
+  "Bags & support": "가방 & 지원"
+  "BAGS & SUPPORT": "가방 & 지원"
+  "Support your tools": "도구 지원"
+  "SUPPORT YOUR TOOLS": "도구 지원"
+  "support your tools": "도구 지원"
+  "Ghost gloves": "고스트 장갑"
+  "GHOST GLOVES": "고스트 장갑"
+  "ghost gloves": "고스트 장갑"
+  "Ghost hands": "고스트 손"
+  "GHOST HANDS": "고스트 손"
+  "ghost hands": "고스트 손"
+  "Support gloves": "지원 장갑"
+  "SUPPORT GLOVES": "지원 장갑"
+  "support gloves": "지원 장갑"
+  "Chute overdrive": "슈트 오버드라이브"
+  "CHUTE OVERDRIVE": "슈트 오버드라이브"
+  "chute overdrive": "슈트 오버드라이브"
+  "Magnet pulse": "자기 펄스"
+  "MAGNET PULSE": "자기 펄스"
+  "Magnet Pulse": "자기 펄스"
+  "magnet pulse": "자기 펄스"
+  "CHAIN LIGHTNING": "연쇄 번개"
+  "chain lightning": "연쇄 번개"
+  "Heavy strike": "강타"
+  "HEAVY STRIKE": "강타"
+  "Heavy Strike": "강타"
+  "heavy strike": "강타"
+  "Lightning": "번개"
+  "LIGHTNING": "번개"
+  "lightning": "번개"
+  "Jackhammer": "잭해머"
+  "JACKHAMMER": "잭해머"
+  "jackhammer": "잭해머"
+  "Perfect grip": "완벽한 양손 그립"
+  "PERFECT GRIP": "완벽한 양손 그립"
+  "Full flow": "최대 플로우"
+  "FULL FLOW": "최대 플로우"
+  "Full Flow": "최대 플로우"
+  "full flow": "최대 플로우"
+  "Shatter + storm": "분쇄 + 폭풍"
+  "SHATTER + STORM": "분쇄 + 폭풍"
+  "Passive": "패시브"
+  "PASSIVE": "패시브"
+  "passive": "패시브"
+  "Owned": "보유"
+  "OWNED": "보유"
+  "owned": "보유"
+  "Equipped": "장착 중"
+  "EQUIPPED": "장착 중"
+  "equipped": "장착 중"
+  "Currently equipped": "현재 장착 중"
+  "CURRENTLY EQUIPPED": "현재 장착 중"
+  "Currently Equipped": "현재 장착 중"
+  "currently equipped": "현재 장착 중"
+  "Unavailable": "사용 불가"
+  "UNAVAILABLE": "사용 불가"
+  "unavailable": "사용 불가"
+  "Not unlocked": "미해금"
+  "NOT UNLOCKED": "미해금"
+  "not unlocked": "미해금"
+  "Can learn": "습득 가능"
+  "CAN LEARN": "습득 가능"
+  "can learn": "습득 가능"
+  "Future route": "이후 경로"
+  "FUTURE ROUTE": "이후 경로"
+  "future route": "이후 경로"
+  "Working toward": "목표"
+  "WORKING TOWARD": "목표"
+  "Working Toward": "목표"
+  "working toward": "목표"
+  "Skill tree balance": "스킬 트리 밸런스"
+  "SKILL TREE BALANCE": "스킬 트리 밸런스"
+  "Banked gold": "보관한 금"
+  "BANKED GOLD": "보관한 금"
+  "Banked Gold": "보관한 금"
+  "banked gold": "보관한 금"
+  "Archived": "보관됨"
+  "ARCHIVED": "보관됨"
+  "archived": "보관됨"
+  "Your equipment": "내 장비"
+  "YOUR EQUIPMENT": "내 장비"
+  "your equipment": "내 장비"
+  "Your personal locker": "개인 보관함"
+  "YOUR PERSONAL LOCKER": "개인 보관함"
+  "your personal locker": "개인 보관함"
+  "Drop a tool here to equip": "여기에 도구를 놓아 장착"
+  "DROP A TOOL HERE TO EQUIP": "여기에 도구를 놓아 장착"
+  "drop a tool here to equip": "여기에 도구를 놓아 장착"
+  "Click to inspect · Double-click to equip": "클릭하여 확인 · 더블 클릭하여 장착"
+  "Click to inspect. Passive items cannot be equipped.": "클릭하여 확인. 패시브 아이템은 장착할 수 없습니다."
+  "Stacks with your other bags": "다른 가방과 중첩됩니다"
+  "STACKS WITH YOUR OTHER BAGS": "다른 가방과 중첩됩니다"
+  "stacks with your other bags": "다른 가방과 중첩됩니다"
+  "Stronger gear already active": "더 강한 장비가 이미 적용 중입니다"
+  "STRONGER GEAR ALREADY ACTIVE": "더 강한 장비가 이미 적용 중입니다"
+  "stronger gear already active": "더 강한 장비가 이미 적용 중입니다"
+  "Best owned bonus · Active": "보유 중 최고 보너스 · 적용 중"
+  "Owned  /  automatic bonus": "보유  /  자동 보너스"
+  "OWNED  /  AUTOMATIC BONUS": "보유  /  자동 보너스"
+  "Owned  /  Automatic Bonus": "보유  /  자동 보너스"
+  "owned  /  automatic bonus": "보유  /  자동 보너스"
+  "Owned  /  keepsake": "보유  /  기념품"
+  "OWNED  /  KEEPSAKE": "보유  /  기념품"
+  "Owned  /  Keepsake": "보유  /  기념품"
+  "owned  /  keepsake": "보유  /  기념품"
+  "Passive utility / Always active\nWorks alongside your other equipment": "패시브 유틸리티 / 항상 적용\n다른 장비와 함께 작동합니다"
+  "[E]  Buy equipment": "[E]  장비 구매"
+  "Pocket Bank: hold [E] nearby to deposit your bag. Hold [F] to pack up.": "포켓 뱅크: 근처에서 [E]를 길게 눌러 가방을 입금. [F]를 길게 눌러 회수."
+  "Pocket Bank: press [4]. Hold left mouse to aim; release on green to place.": "포켓 뱅크: [4]를 누르세요. 좌클릭을 길게 눌러 조준하고, 초록색일 때 떼면 설치합니다."
+  "Unlock the shovel or magnet in the proficiencies [Q].\nBag, movement and deposit upgrades apply automatically.": "숙련도 [Q]에서 삽이나 자석을 해금하세요.\n가방, 이동, 입금 강화는 자동으로 적용됩니다."
+  "Keep collecting coins to earn proficiency points. No per-run point limit.": "코인을 계속 모으면 숙련도 포인트를 얻습니다. 플레이당 포인트 제한은 없습니다."
+  "GOLD RUSH - stations pull gold, chutes drain twice as fast!": "골드 러시 - 입금소가 금을 끌어오고, 슈트가 2배 빠르게 배출합니다!"
+  "Gold Rush: fully empty a bag after banking at least 10% of its capacity at a station. Activates automatically.": "골드 러시: 입금소에서 가방 용량의 10% 이상을 입금한 뒤 가방을 완전히 비우면 자동으로 발동합니다."
+  "Ghost hands: collect with any tool. Helpers appear over nearby coins.": "고스트 손: 어떤 도구로든 수집합니다. 주변 코인 위에 도우미가 나타납니다."
+  "Chain lightning can trigger with this tool.": "이 도구로 연쇄 번개가 발동할 수 있습니다."
+  "Heavy strikes can trigger with this tool.": "이 도구로 강타가 발동할 수 있습니다."
+  "Right mouse: pulse around the point you aim at.": "우클릭: 조준한 지점 주변에 펄스를 발사합니다."
+  "Hold right mouse: Jackhammer.": "우클릭 길게: 잭해머."
+  "At full streak. Short-lived boosts are not included.": "최대 연속 상태. 일시적인 버프는 포함되지 않습니다."
+  "Your upgrades so far. Short-lived boosts are not included.": "지금까지의 강화. 일시적인 버프는 포함되지 않습니다."
+  "Starting value": "시작 값"
+  "STARTING VALUE": "시작 값"
+  "starting value": "시작 값"
+  "Movement speed": "이동 속도"
+  "MOVEMENT SPEED": "이동 속도"
+  "movement speed": "이동 속도"
+  "Coins per use": "1회당 코인"
+  "COINS PER USE": "1회당 코인"
+  "coins per use": "1회당 코인"
+  "Pickup width": "수집 폭"
+  "PICKUP WIDTH": "수집 폭"
+  "pickup width": "수집 폭"
+  "How far away you can collect.": "얼마나 먼 곳에서 수집할 수 있는지."
+  "How fast a station empties your bag.": "입금소가 가방을 비우는 속도."
+  "How fast you move.": "이동 속도."
+  "How many times your tool collects per second.": "도구가 초당 수집하는 횟수."
+  "How much you can carry.": "운반할 수 있는 양."
+  "Up to this many in one pickup.": "1회 수집 최대 개수."
+  "Width of the area you collect from.": "수집하는 영역의 폭."
+  "Proficiency MAX": "숙련도 최대"
+  "PROFICIENCY MAX": "숙련도 최대"
+  "proficiency max": "숙련도 최대"
+  "Proficiencies · v1.0": "숙련도 · 1.0 버전"
+  "Over 24 days": "24일 초과"
+  "OVER 24 DAYS": "24일 초과"
+  "over 24 days": "24일 초과"
+  "Icon credits": "아이콘 출처"
+  "ICON CREDITS": "아이콘 출처"
+  "icon credits": "아이콘 출처"
+  "Pump: bag empty": "펌프: 가방 비었음"
+  "Pump: station connected": "펌프: 입금소 연결됨"
+  "Pouch": "파우치"
+  "POUCH": "파우치"
+  "pouch": "파우치"
+  "Backpack": "백팩"
+  "BACKPACK": "백팩"
+  "backpack": "백팩"
+  "Tiny Magnet": "소형 자석"
+  "TINY MAGNET": "소형 자석"
+  "tiny magnet": "소형 자석"
+  "Coin Rake": "코인 갈퀴"
+  "COIN RAKE": "코인 갈퀴"
+  "coin rake": "코인 갈퀴"
+  "Spring Boots": "스프링 부츠"
+  "SPRING BOOTS": "스프링 부츠"
+  "spring boots": "스프링 부츠"
+  "Magnetic Boots": "마그네틱 부츠"
+  "MAGNETIC BOOTS": "마그네틱 부츠"
+  "magnetic boots": "마그네틱 부츠"
+  "Rocket Soles": "로켓 밑창"
+  "ROCKET SOLES": "로켓 밑창"
+  "rocket soles": "로켓 밑창"
+  "Quick-Dump Liner": "고속 배출 라이너"
+  "QUICK-DUMP LINER": "고속 배출 라이너"
+  "quick-dump liner": "고속 배출 라이너"
+  "Hopper Pack": "호퍼 팩"
+  "HOPPER PACK": "호퍼 팩"
+  "hopper pack": "호퍼 팩"
+  "Hydraulic Coupler": "유압 커플러"
+  "HYDRAULIC COUPLER": "유압 커플러"
+  "hydraulic coupler": "유압 커플러"
+  "Gravity Coupler": "중력 커플러"
+  "GRAVITY COUPLER": "중력 커플러"
+  "gravity coupler": "중력 커플러"
+  "Coin Railgun": "코인 레일건"
+  "COIN RAILGUN": "코인 레일건"
+  "coin railgun": "코인 레일건"
+  "Drillvac": "드릴 진공기"
+  "DRILLVAC": "드릴 진공기"
+  "drillvac": "드릴 진공기"
+  "Singularity": "특이점"
+  "SINGULARITY": "특이점"
+  "singularity": "특이점"
+  "Wormhole Coil": "웜홀 코일"
+  "WORMHOLE COIL": "웜홀 코일"
+  "wormhole coil": "웜홀 코일"
+  "Gold Winch": "골드 윈치"
+  "GOLD WINCH": "골드 윈치"
+  "gold winch": "골드 윈치"
+  "Vacuum Grenade": "진공 수류탄"
+  "VACUUM GRENADE": "진공 수류탄"
+  "vacuum grenade": "진공 수류탄"
+  "Vault Buddy": "금고 친구"
+  "VAULT BUDDY": "금고 친구"
+  "vault buddy": "금고 친구"
+  "Vault Pack": "금고 팩"
+  "VAULT PACK": "금고 팩"
+  "vault pack": "금고 팩"
+  "Royal Satchel": "왕실 가방"
+  "ROYAL SATCHEL": "왕실 가방"
+  "royal satchel": "왕실 가방"
+  "Royal Coupler": "왕실 커플러"
+  "ROYAL COUPLER": "왕실 커플러"
+  "royal coupler": "왕실 커플러"
+  "Turbine Coupler": "터빈 커플러"
+  "TURBINE COUPLER": "터빈 커플러"
+  "turbine coupler": "터빈 커플러"
+  "Pressure Coupler": "압력 커플러"
+  "PRESSURE COUPLER": "압력 커플러"
+  "pressure coupler": "압력 커플러"
+  "Pressure Vacuum": "압력 진공기"
+  "PRESSURE VACUUM": "압력 진공기"
+  "pressure vacuum": "압력 진공기"
+  "Cargo Harness": "화물 하네스"
+  "CARGO HARNESS": "화물 하네스"
+  "cargo harness": "화물 하네스"
+  "Haul Frame": "운반 프레임"
+  "HAUL FRAME": "운반 프레임"
+  "haul frame": "운반 프레임"
+  "Balloon Rig": "풍선 장비"
+  "BALLOON RIG": "풍선 장비"
+  "balloon rig": "풍선 장비"
+  "Pop-Jet Belt": "팝제트 벨트"
+  "POP-JET BELT": "팝제트 벨트"
+  "pop-jet belt": "팝제트 벨트"
+  "Coin Blunderbuss": "코인 나팔총"
+  "COIN BLUNDERBUSS": "코인 나팔총"
+  "coin blunderbuss": "코인 나팔총"
+  "Ricochet Prism": "도탄 프리즘"
+  "RICOCHET PRISM": "도탄 프리즘"
+  "ricochet prism": "도탄 프리즘"
+  "Seismic Thumper": "지진 썸퍼"
+  "SEISMIC THUMPER": "지진 썸퍼"
+  "seismic thumper": "지진 썸퍼"
+  "Tesla Stormfork": "테슬라 스톰포크"
+  "TESLA STORMFORK": "테슬라 스톰포크"
+  "tesla stormfork": "테슬라 스톰포크"
+  "Gold Transmitter": "골드 송신기"
+  "GOLD TRANSMITTER": "골드 송신기"
+  "gold transmitter": "골드 송신기"
+  "POP! Pressure vessel repairing": "펑! 압력 용기 수리 중"
+
+  "Language": "언어"
+  "English": "한국어"
+  "Save slot": "저장 슬롯"
+  "Save slots": "저장 슬롯"
+  "Empty slot": "빈 슬롯"
+  "Slot name (optional)": "슬롯 이름 (선택)"
+  "v1.2 · Current (Recommended)": "1.2 버전 · 최신 (권장)"
+  "v1.1 · Current": "1.1 버전 · 최신"
+  "v1.1 · Legacy": "1.1 버전 · 구버전"
+  "v1.0 · Legacy": "1.0 버전 · 구버전"
+skills:
+  1325:
+    name: "고속 펌프"
+    description: "펌프 간격 -3초."
+  1607:
+    name: "유량 조절기"
+    description: "슈트 배출 속도 +25%."
+  1323:
+    name: "빠른 펌프"
+    description: "펌프 간격 -3초."
+  30322:
+    name: "고속 펌프"
+    description: "펌프 간격 -3초."
+  30312:
+    name: "전면 커버리지"
+    description: "수집 범위 +35%. 기본 도구 사거리 +30%."
+  1226:
+    name: "익스프레스 카운터"
+    description: "포켓 뱅크에 일반 입금소 속도의 75%로 입금할 수 있습니다."
+  30511:
+    name: "활선"
+    description: "번개가 적중할 때마다 코인을 50% 더 수집합니다."
+  1107:
+    name: "더 큰 가방 7"
+    description: "가방 용량 +21.5%."
+  30023:
+    name: "마스터 그립"
+    description: "완벽한 양손 그립이 이후 양손 그립을 더 강하고 넓게 만들지만 타이밍이 어려워집니다. 타이밍을 놓치면 보너스가 초기화됩니다. 가방을 150%까지 초과해서 채울 수 있습니다(가득 차기 전에 시작해야 함)."
+  30222:
+    name: "지점 매니저"
+    description: "포켓 뱅크의 자동 수집 속도 +100% (최대 속도 포함). 뱅크 반경: 9m → 12m. 가방 용량 +33.11%."
+  11219:
+    name: "입금 준비 완료"
+    description: "가방 용량 +9.32%.\n입금 가능 거리 +0.11m."
+  1208:
+    name: "골드 러시"
+    description: "가방 용량의 10% 이상을 입금한 뒤 입금소에서 가방을 비우면 발동합니다. 골드 러시 중에는 드러나 있고 잠금 해제된 입금소가 금을 모으고, 슈트의 수집 속도가 2배가 됩니다."
+  1108:
+    name: "걸어 다니는 금고"
+    description: "가방 용량 +182.99%.\n입금 속도 -20%."
+  1525:
+    name: "넓은 필드 3"
+    description: "수집 범위 +12%.\n도구 사거리 +15% (기본값 기준)."
+  1024:
+    name: "빠른 움켜쥐기"
+    description: "그립 스위트 스폿이 0.12초 더 빨리 시작됩니다."
+  10119:
+    name: "황금 손길"
+    description: "도구 속도 +3.9%.\n맨손 1회당 수집량 +8.18%."
+  1526:
+    name: "충전된 입금"
+    description: "강타 및 번개 재사용 대기시간 -7.84%. 가방 용량의 10% 이상을 입금한 뒤 입금소에서 가방을 비우면 8초간 번개 재사용 대기시간이 절반이 됩니다."
+  11119:
+    name: "배송 준비 완료"
+    description: "가방 용량 +18.21%.\n입금 속도 +7.5%."
+  1203:
+    name: "입금소 업그레이드 I"
+    description: "입금 속도 +100%.\n입금 가능 거리 +1.5m."
+  1018:
+    name: "총동원"
+    description: "플로우가 최대일 때 여섯 번째 고스트 손이 합류하고 손들이 더 빠르게 수집합니다. {Primary}를 계속 누르고 있으면 수집합니다."
+  30201:
+    name: "더 긴 러시"
+    description: "입금 속도 +15.61%.\n골드 러시 지속 시간 +5초."
+  1224:
+    name: "지역 지점"
+    description: "포켓 뱅크가 더 먼 곳에서 수집합니다. 3m 이내에서 {Interact}를 누르고 있으면 일반 속도의 절반으로 입금합니다."
+  30101:
+    name: "금고 안감"
+    description: "가방 용량 +33.11%."
+  30522:
+    name: "펄스 과부하"
+    description: "자기 펄스가 바운스마다 수집할 수 있는 양이 늘어납니다. 연쇄는 코인 한도를 공유합니다."
+  12115:
+    name: "확장 흡입구"
+    description: "입금 속도 +7.05%.\n입금 가능 거리 +0.38m."
+  1113:
+    name: "빈틈없는 포장 3"
+    description: "가방 용량 +30%.\n입금 속도 +16%."
+  1402:
+    name: "강타"
+    description: "수집 시 강타가 발동해 주변의 금을 추가로 수집할 수 있습니다. 삽을 사용하면 더 자주 발동하고 더 많은 코인을 수집합니다."
+  1127:
+    name: "손쉬운 입금 7"
+    description: "가방 용량 +9.32%.\n입금 가능 거리 +0.11m."
+  1012:
+    name: "도움의 손길"
+    description: "{Primary}를 누르고 있으면 고스트 손이 함께 수집합니다. 더 강하고 빠른 도구일수록 고스트 손의 수집량이 늘어납니다. 습득한 강타와 번개 효과도 발동시킬 수 있습니다."
+  11015:
+    name: "깊은 비축"
+    description: "가방 용량 +79.34%."
+  1026:
+    name: "리듬 그립"
+    description: "플로우가 활성화되어 있고 가방이 절반 이상 차 있으면 25% 더 빠르게 수집합니다. 그립 타이밍이 쉬워지고, 이후 일반 수집으로 더 빨리 복귀합니다."
+  1422:
+    name: "넓은 삽 2"
+    description: "수집 범위 +25%.\n삽 최대 반경 +0.05m."
+  12215:
+    name: "대량 배송"
+    description: "가방 용량 +6.26%.\n입금 속도 +7.05%."
+  1008:
+    name: "몰입 상태"
+    description: "플로우가 1회당 코인 수와 수집 범위를 늘립니다. 플로우 최대 시 코인 +100%, 범위 +20%."
+  13015:
+    name: "빠른 반사신경"
+    description: "도구 속도 +36.6%."
+  10019:
+    name: "완벽한 리듬"
+    description: "도구 속도 +6.81%."
+  15115:
+    name: "충전된 수확"
+    description: "번개 바운스당 코인 +7.41%."
+  12019:
+    name: "신속 이체"
+    description: "입금 속도 +84.18%."
+  13119:
+    name: "탁 트인 범위"
+    description: "수집 범위 +21.75%.\n도구 사거리 +6% (기본값 기준)."
+  1322:
+    name: "대형 펌프실"
+    description: "펌프 1회마다 가방 용량의 5%를 추가로 가방에서 뱅크로 옮깁니다."
+  1502:
+    name: "정전기 방전"
+    description: "수집 시 번개가 방출되어 코인 더미 사이를 튀며 금을 추가로 수집할 수 있습니다. 자석을 사용하면 더 많은 금을 수집합니다."
+  14219:
+    name: "전면 쓸기"
+    description: "수집 범위 +18.22%.\n삽 최대 반경 +0.1m."
+  20402:
+    name: "흙 고르기"
+    description: "1회당 코인 +41.15%.\n강타 코인 +31.95%."
+  1312:
+    name: "긴 사거리 1"
+    description: "도구 사거리 +8% (기본값 기준)."
+  1517:
+    name: "전도 전류 7"
+    description: "번개 기본 확률 +8%p (습득 시).\n번개 바운스당 코인 +2.41%."
+  1424:
+    name: "넓은 삽 4"
+    description: "수집 범위 +25%.\n삽 최대 반경 +0.1m."
+  1122:
+    name: "손쉬운 입금 2"
+    description: "가방 용량 +15%.\n입금 가능 거리 +0.15m."
+  1417:
+    name: "수북한 삽날 3"
+    description: "1회당 코인 +13.52%."
+  1006:
+    name: "멈추지 않기"
+    description: "수집에 실패하거나 도구가 준비된 후 최대 1.5초간 멈춰도 플로우가 유지됩니다. 도구 사거리 +40% (기본값 기준)."
+  1621:
+    name: "슈트 오버드라이브"
+    description: "슈트 배출 속도 영구 +12.5%. [R]을 누르면 8초간 배출 속도가 3배가 됩니다. 재사용 대기시간: 45초."
+  1128:
+    name: "익스프레스 가방"
+    description: "입금 속도 +30.15%.\n입금 가능 거리 +0.04m."
+  30311:
+    name: "넉넉한 그립"
+    description: "수집 범위 +20%. 기본 도구 사거리 +20%."
+  30412:
+    name: "지진 내려찍기"
+    description: "잭해머가 코인을 50% 더 수집하고, 더 깊이 파며, 더 빨리 재충전됩니다. 닿을 수 있는 금과 가방 공간에 따라 제한됩니다."
+  20502:
+    name: "도미노 폭풍"
+    description: "번개 연쇄 수: 6 → 8, 바운스당 공유 코인 +25%. 추가 바운스 확률: 65% → 80%."
+  1001:
+    name: "기본 다루기"
+    description: "도구 속도 +20.02%.\n도구 사거리 +15% (기본값 기준)."
+  12119:
+    name: "매끄러운 인계"
+    description: "입금 속도 +7.05%.\n입금 가능 거리 +0.38m."
+  1106:
+    name: "더 큰 가방 6"
+    description: "가방 용량 +53.06%."
+  1515:
+    name: "전도 전류 5"
+    description: "번개 기본 확률 +8%p (습득 시).\n번개 바운스당 코인 +10%."
+  1314:
+    name: "긴 사거리 2"
+    description: "도구 사거리 +8% (기본값 기준)."
+  1016:
+    name: "분주한 손들"
+    description: "고스트 손 5개가 주변의 금을 찾아 수집합니다. 직접 조준하지 않아도 됩니다. {Primary}를 계속 누르고 있으면 수집합니다."
+  1608:
+    name: "흡입 터빈"
+    description: "슈트 배출 속도 +100%."
+  1408:
+    name: "세계 파괴자"
+    description: "강타가 더 많은 금을 수집하고 충격 지점 주변 최소 4m까지 닿습니다. 더 안정적으로 발동하고 더 빨리 재충전됩니다."
+  12219:
+    name: "간소화된 화물"
+    description: "가방 용량 +6.26%.\n입금 속도 +7.05%."
+  1025:
+    name: "넓은 그립"
+    description: "그립 수집 반경 +50%."
+  30121:
+    name: "빠른 방출"
+    description: "가방 용량 +20.89%.\n입금 속도 +24.45%."
+  20002:
+    name: "한 줌의 금"
+    description: "맨손 1회당 수집량 +30.89%."
+  UnlockMagnet:
+    name: "자석 해금"
+    description: "자석 [3]: 5.5m 이내 표면의 코인을 0.7초마다 최대 3개 끌어당깁니다."
+  30102:
+    name: "바닥 없는 짐칸"
+    description: "가방 용량 +49.11%."
+  1104:
+    name: "더 큰 가방 4"
+    description: "가방 용량 +53.06%."
+  1508:
+    name: "연쇄 폭풍"
+    description: "번개가 6갈래로 퍼지고, 바운스가 늘어나며 더 빨리 재충전됩니다. 더 안정적으로 발동합니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
+  30122:
+    name: "신속 입금"
+    description: "입금 속도 +35.73%."
+  1112:
+    name: "빈틈없는 포장 2"
+    description: "가방 용량 +30%.\n입금 속도 +16%."
+  1403:
+    name: "충격 확산 1"
+    description: "1회당 코인 +16.76%.\n강타 반경 +15%."
+  1406:
+    name: "깊은 충격"
+    description: "강타가 더 넓은 범위에서 더 많은 금을 수집하고, 최소 코인 한도가 높아집니다."
+  1506:
+    name: "초전도체"
+    description: "번개가 3갈래로 나뉘어 더 넓은 범위에서 더 많은 금을 수집합니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
+  1027:
+    name: "묵직한 한 줌"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  30021:
+    name: "골드브레이커"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  1007:
+    name: "날랜 손가락 3"
+    description: "도구 속도 +8.55%."
+  1425:
+    name: "넓은 삽 5"
+    description: "수집 범위 +25%.\n강타 기본 확률 +3%p (습득 시)."
+  1017:
+    name: "연타 4"
+    description: "도구 속도 +5.23%.\n맨손 1회당 수집량 +11.05%."
+  14015:
+    name: "체중 싣기"
+    description: "1회당 코인 +23.92%.\n강타 반경 +11.05%."
+  14215:
+    name: "넓은 호"
+    description: "수집 범위 +18.22%.\n삽 최대 반경 +0.1m."
+  1501:
+    name: "코일 조율"
+    description: "도구 속도 +8.55%."
+  14119:
+    name: "풍성한 수확"
+    description: "1회당 코인 +13.52%."
+  1326:
+    name: "대용량 펌프"
+    description: "펌프 1회마다 가방 용량의 10%를 추가로 가방에서 뱅크로 옮깁니다."
+  1324:
+    name: "깊은 펌프실"
+    description: "펌프 1회마다 가방 용량의 5%를 추가로 가방에서 뱅크로 옮깁니다."
+  16015:
+    name: "오버드라이브 부스트"
+    description: "슈트 오버드라이브의 배출 속도가 평소의 5배가 됩니다."
+  11215:
+    name: "여유 공간"
+    description: "가방 용량 +9.32%.\n입금 가능 거리 +0.11m."
+  30022:
+    name: "완벽한 자세"
+    description: "마스터 그립 보너스가 최대 6단계까지 쌓입니다. 스위트 스폿이 더 빨리 오지만 약간 짧아집니다. 타이밍을 놓치면 여전히 보너스가 초기화됩니다."
+  1401:
+    name: "퍼담기 리듬"
+    description: "도구 속도 +8.55%."
+  13215:
+    name: "짧은 사이클"
+    description: "펌프 간격 -2.25초."
+  1212:
+    name: "호퍼 접근"
+    description: "입금 속도 +15%.\n입금 가능 거리 +0.5m."
+  1513:
+    name: "전도 전류 3"
+    description: "번개 기본 확률 +8%p (습득 시).\n번개 바운스당 코인 +10%."
+  1123:
+    name: "손쉬운 입금 3"
+    description: "가방 용량 +15%.\n입금 가능 거리 +0.15m."
+  1414:
+    name: "강력 피스톤"
+    description: "잭해머가 더 많은 금을 수집하고, 더 깊이 파며, 더 빨리 재충전됩니다. 닿을 수 있는 금과 가방 공간에 따라 제한됩니다."
+  BagTraining:
+    name: "첫 번째 가방"
+    description: "가방 용량 +100%."
+  1005:
+    name: "날랜 손가락 2"
+    description: "도구 속도 +8.55%."
+  1327:
+    name: "고속 펌프 사이클"
+    description: "펌프 간격 -0.75초."
+  1211:
+    name: "하층 호퍼 01"
+    description: "01층의 입금소를 해금합니다. 해당 구역을 드러내면 사용할 수 있습니다.\n입금 속도 +15%.\n입금 가능 거리 +0.5m."
+  1321:
+    name: "가방 펌프"
+    description: "소지한 코인을 자동으로 뱅크에 옮깁니다: 20초마다 가방 용량의 5% (최소 1개). 이체에 1초가 걸립니다. 입금소 보너스는 발동하지 않습니다."
+  1416:
+    name: "해머 휩쓸기"
+    description: "잭해머의 수집 반경이 늘어납니다. 강타 빌드에도 적용됩니다. 낙하 포함 총 반경은 15m를 넘을 수 없습니다."
+  1305:
+    name: "보강 장갑"
+    description: "1회당 코인 +12.61%.\n이후 1회당 코인 +1개."
+  30411:
+    name: "말뚝 박기"
+    description: "잭해머가 코인을 2배 수집하고 더 깊이 팝니다. 닿을 수 있는 금과 가방 공간에 따라 제한됩니다."
+  30011:
+    name: "도우미 손들"
+    description: "고스트 손이 코인을 25% 더 수집합니다."
+  1105:
+    name: "더 큰 가방 5"
+    description: "가방 용량 +117.9%."
+  1514:
+    name: "전도 전류 4"
+    description: "번개 바운스당 코인 +10%."
+  1205:
+    name: "빠른 입금 4"
+    description: "입금 속도 +86.09%."
+  1118:
+    name: "빈틈없는 포장 8"
+    description: "가방 용량 +18.21%.\n입금 속도 +7.5%."
+  30012:
+    name: "황금 도우미"
+    description: "고스트 손이 코인을 40% 더 수집합니다."
+  1003:
+    name: "날랜 손가락 1"
+    description: "도구 속도 +8.55%."
+  1522:
+    name: "자기 펄스"
+    description: "자석을 든 상태에서 {Secondary}를 누르면 주변 금으로 번개를 발사합니다. 더 강한 수집력과 번개 강화가 수집량을 늘립니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
+  1218:
+    name: "호퍼 마스터리"
+    description: "입금 속도 +7.05%.\n입금 가능 거리 +0.38m."
+  10215:
+    name: "손바닥 버팀"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  14019:
+    name: "분쇄력"
+    description: "강타 코인 +12.12%."
+  30212:
+    name: "호퍼 익스프레스"
+    description: "입금 속도 +35.73%.\n입금 가능 거리 +1m."
+  30601:
+    name: "거센 흐름"
+    description: "슈트 배출 속도 +60%."
+  1307:
+    name: "재빠른 장갑"
+    description: "도구 속도 +10.96%."
+  1222:
+    name: "포켓 뱅크"
+    description: "{Tool4}로 포켓 뱅크를 장착합니다. {Primary}를 눌렀다 떼어 설치하고, 근처에서 {Relocate}를 누르고 있으면 회수합니다. 주변에 보이는 금을 자동으로 보관합니다. 가방이 클수록 속도가 빨라집니다."
+  30221:
+    name: "두 배의 수익"
+    description: "포켓 뱅크의 자동 수집 속도 +100% (최대 속도 포함). 범위 안에 보이는 금에 따라 제한됩니다."
+  1311:
+    name: "넓은 그립 1"
+    description: "수집 범위 +15%.\n도구 사거리 +8% (기본값 기준)."
+  1507:
+    name: "아크 전류 3"
+    description: "1회당 코인 +10.5%.\n번개 점프 거리 +3.56%."
+  1207:
+    name: "빠른 입금 5"
+    description: "입금 속도 +22.58%."
+  1111:
+    name: "빈틈없는 포장 1"
+    description: "가방 용량 +30%.\n입금 속도 +16%."
+  1116:
+    name: "빈틈없는 포장 6"
+    description: "가방 용량 +24.98%.\n입금 속도 +10.13%."
+  1407:
+    name: "충격 확산 3"
+    description: "1회당 코인 +7.41%.\n강타 반경 +3.56%."
+  1028:
+    name: "고정 그립"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  10115:
+    name: "숙련된 그립"
+    description: "도구 속도 +3.9%.\n맨손 1회당 수집량 +8.18%."
+  1204:
+    name: "빠른 입금 3"
+    description: "입금 속도 +71.84%."
+  1125:
+    name: "손쉬운 입금 5"
+    description: "가방 용량 +12.61%.\n입금 가능 거리 +0.15m."
+  1412:
+    name: "잭해머"
+    description: "삽을 든 상태에서 {Secondary}를 0.65초간 누르면 조준 방향으로 도약해 착지 시 내려찍습니다. 높이 떨어질수록 충격이 강해집니다. 파워 퍼담기를 대체합니다. 최대 반경: 15m (낙하 포함)."
+  1418:
+    name: "굴착기"
+    description: "도구 속도 -22.78%.\n1회당 코인 +88.03%."
+  30512:
+    name: "과충전 연쇄"
+    description: "번개가 적중할 때마다 코인을 75% 더 수집합니다."
+  DepositTraining:
+    name: "빠른 입금"
+    description: "입금 속도 +100%."
+  1101:
+    name: "더 큰 가방 1"
+    description: "가방 용량 +65%."
+  1228:
+    name: "효율적인 배송 4"
+    description: "가방 용량 +6.26%.\n입금 속도 +7.05%."
+  1313:
+    name: "넓은 그립 2"
+    description: "수집 범위 +15%.\n도구 사거리 +8% (기본값 기준)."
+  1505:
+    name: "아크 전류 2"
+    description: "1회당 코인 +33.11%.\n번개 점프 거리 +15%."
+  1213:
+    name: "하층 호퍼 02"
+    description: "입금 속도 +15%.\n입금 가능 거리 +0.5m.\n02층의 입금소를 해금합니다. 구역을 드러내면 사용할 수 있습니다."
+  1405:
+    name: "충격 확산 2"
+    description: "1회당 코인 +24.98%.\n강타 반경 +15%."
+  1603:
+    name: "매끄러운 안감"
+    description: "슈트 배출 속도 +25%."
+  1004:
+    name: "행운의 손길"
+    description: "도구 속도 +5%. 습득한 강타와 번개의 기본 확률 +4%p."
+  1426:
+    name: "중량 퍼담기"
+    description: "습득한 강타가 코인을 7.92% 더 수집합니다(최소량 포함). 가방이 절반 이상 차 있으면 추가로 +50%."
+  1521:
+    name: "넓은 필드 1"
+    description: "도구 사거리 +15% (기본값 기준), 수집 범위 +12%."
+  12015:
+    name: "수문 개방"
+    description: "입금 속도 +84.18%."
+  30602:
+    name: "황금의 강"
+    description: "슈트 배출 속도 +100%."
+  14115:
+    name: "가득 찬 삽"
+    description: "1회당 코인 +13.52%."
+  11115:
+    name: "깔끔한 쌓기"
+    description: "가방 용량 +18.21%.\n입금 속도 +7.5%."
+  1304:
+    name: "민첩한 장갑"
+    description: "도구 속도 +39.9%."
+  1512:
+    name: "전도 전류 2"
+    description: "번개 바운스당 코인 +10%."
+  1301:
+    name: "가벼운 장갑"
+    description: "도구 속도 +27.54%."
+  1223:
+    name: "효율적인 배송 2"
+    description: "가방 용량 +10%.\n입금 속도 +15%."
+  1206:
+    name: "입금소 업그레이드 II"
+    description: "입금 속도 +104.23%.\n입금 가능 거리 +1.5m."
+  1117:
+    name: "빈틈없는 포장 7"
+    description: "가방 용량 +18.21%.\n입금 속도 +7.5%."
+  15015:
+    name: "퍼지는 전류"
+    description: "1회당 코인 +34.94%.\n번개 점프 거리 +11.05%."
+  1002:
+    name: "리듬 찾기"
+    description: "꾸준히 수집하면 플로우가 쌓입니다: 맨손 속도 최대 +60%, 다른 도구는 +30%. 도구 속도 +20.02%, 맨손 1회당 수집량 +108.14%."
+  1428:
+    name: "넓은 삽 7"
+    description: "수집 범위 +5.74%.\n삽 최대 반경 +0.05m."
+  15219:
+    name: "원거리 인력"
+    description: "도구 사거리 +11.25% (기본값 기준)."
+  30211:
+    name: "고속 호퍼"
+    description: "입금 속도 +24.45%.\n입금 가능 거리 +1m."
+  1528:
+    name: "대소용돌이"
+    description: "수집 범위 +100%. 도구 사거리 +3.75% (기본값 기준) 후, 전체 사거리가 35% 감소합니다."
+  30111:
+    name: "완벽한 포장"
+    description: "가방 용량 +49.11%.\n입금 속도 +15.61%."
+  13019:
+    name: "가벼운 손길"
+    description: "도구 속도 +9.18%."
+  10015:
+    name: "날랜 손목"
+    description: "도구 속도 +6.35%."
+  15119:
+    name: "집중된 충전"
+    description: "번개 바운스당 코인 +7.41%."
+  1221:
+    name: "효율적인 배송 1"
+    description: "입금 속도 +15%.\n가방 용량 +10%."
+  1306:
+    name: "행운의 장갑 II"
+    description: "도구 속도 +5%. 습득한 강타와 번개의 기본 확률 +3%p."
+  1315:
+    name: "넓은 그립 3"
+    description: "수집 범위 +15%.\n도구 사거리 +8% (기본값 기준)."
+  1523:
+    name: "넓은 필드 2"
+    description: "수집 범위 +12%.\n도구 사거리 +15% (기본값 기준)."
+  1115:
+    name: "빈틈없는 포장 5"
+    description: "가방 용량 +24.98%.\n입금 속도 +10.13%."
+  1404:
+    name: "여진"
+    description: "강타가 두 번째 코인 더미를 타격합니다.\n강타 반경 +10%."
+  1318:
+    name: "넓은 커버리지"
+    description: "수집 범위 +15%.\n도구 사거리 +8% (기본값 기준)."
+  1215:
+    name: "하층 호퍼 04"
+    description: "04층의 입금소를 해금합니다. 구역을 드러내면 사용할 수 있습니다.\n입금 속도 +9.51%.\n입금 가능 거리 +0.5m."
+  1303:
+    name: "행운의 장갑"
+    description: "도구 속도 +5%. 습득한 강타와 번개의 기본 확률 +3%p."
+  30202:
+    name: "지속되는 러시"
+    description: "입금 속도 +30.15%.\n골드 러시 지속 시간 +5초."
+  1126:
+    name: "손쉬운 입금 6"
+    description: "가방 용량 +12.61%.\n입금 가능 거리 +0.15m."
+  1413:
+    name: "수북한 삽날 1"
+    description: "1회당 코인 +18.41%."
+  30112:
+    name: "한 치도 낭비 없이"
+    description: "가방 용량 +80.25%.\n입금 속도 +15.61%."
+  20001:
+    name: "황금 그립"
+    description: "맨손 1회당 수집량 +19.54%."
+  15215:
+    name: "필드 확장"
+    description: "수집 범위 +8.87%.\n도구 사거리 +11.25% (기본값 기준)."
+  1308:
+    name: "자력 발걸음"
+    description: "금 위를 걸으면 도구 수집 속도의 20%만큼 추가로 수집합니다. 0.75초마다 가방에 들어갑니다(최소 1개). 멈춰 있거나 가방이 가득 차면 중단됩니다."
+  13219:
+    name: "예열된 펌프"
+    description: "펌프 간격 -1.5초."
+  1504:
+    name: "더 긴 연쇄"
+    description: "번개 바운스 횟수: 5 → 7. 추가 바운스 확률: 25% → 45%. 점프 거리 +10%."
+  1317:
+    name: "넓은 그립 4"
+    description: "수집 범위 +11.05%.\n도구 사거리 +6% (기본값 기준)."
+  1606:
+    name: "동력 펌프"
+    description: "슈트 배출 속도 +80%."
+  1124:
+    name: "손쉬운 입금 4"
+    description: "가방 용량 +12.61%.\n입금 가능 거리 +0.15m."
+  1102:
+    name: "더 큰 가방 2"
+    description: "가방 용량 +65%."
+  1511:
+    name: "전도 전류 1"
+    description: "번개 기본 확률 +8%p (습득 시).\n번개 바운스당 코인 +10%."
+  1503:
+    name: "아크 전류 1"
+    description: "1회당 코인 +20.89%.\n번개 점프 거리 +15%."
+  10219:
+    name: "주먹 고정"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  1411:
+    name: "파워 퍼담기"
+    description: "삽을 든 상태에서 {Secondary}를 0.65초간 누른 뒤 떼면 더 강하고 넓게 퍼담습니다. 주변의 금과 가방 공간에 따라 제한됩니다."
+  30321:
+    name: "깊은 펌프"
+    description: "펌프 1회마다 가방 용량의 5%를 추가로 가방에서 뱅크로 옮깁니다."
+  1021:
+    name: "양손 그립"
+    description: "맨손을 든 상태에서 {Secondary}를 누르고 스위트 스폿에서 떼면(완벽한 양손 그립) 대량으로 수집합니다. 수집력이 강하고 가방이 클수록 코인 한도가 늘어납니다. 주변의 금과 가방 공간이 필요합니다."
+  30423:
+    name: "우르릉 천둥"
+    description: "수집 범위 +25%.\n강타 코인 +14.41%."
+  30301:
+    name: "전문가 장갑"
+    description: "도구 속도 +14.33%."
+  1227:
+    name: "효율적인 배송 3"
+    description: "가방 용량 +6.26%.\n입금 속도 +7.05%."
+  1328:
+    name: "오버플로 펌프"
+    description: "가방이 가득 차면 추가 펌프가 즉시 1회 작동합니다. 재사용 대기시간: 60초."
+  1202:
+    name: "빠른 입금 2"
+    description: "입금 속도 +80%."
+  30422:
+    name: "분쇄 휩쓸기"
+    description: "강타 기본 확률 +4%p (습득 시).\n강타 코인 +9.34%."
+  30302:
+    name: "명품 장갑"
+    description: "도구 속도 +22.37%."
+  1214:
+    name: "하층 호퍼 03"
+    description: "03층의 입금소를 해금합니다. 구역을 드러내면 사용할 수 있습니다.\n입금 속도 +9.51%.\n입금 가능 거리 +0.5m."
+  30421:
+    name: "더 넓은 스윙"
+    description: "수집 범위 +20%.\n삽 최대 반경 +0.1m."
+  1602:
+    name: "넓은 흡입구"
+    description: "슈트 배출 속도 +50%."
+  1524:
+    name: "강력한 펄스"
+    description: "자기 펄스가 더 넓은 범위에서 더 많은 금을 수집합니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
+  1023:
+    name: "깊은 그립"
+    description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
+  1421:
+    name: "넓은 삽 1"
+    description: "수집 범위 +25%. 강타에도 넓어진 수집 범위가 적용됩니다.\n강타 기본 확률 +3%p (습득 시)."
+  MovementTraining:
+    name: "작업 장갑"
+    description: "도구 속도 +5.89%."
+  1600:
+    name: "벽면 슈트"
+    description: "초당 코인 1개를 자동으로 뱅크에 배출합니다(모든 벽면 슈트가 공유)."
+  1302:
+    name: "미끄럼 방지 장갑"
+    description: "1회당 코인 +12.61%.\n이후 1회당 코인 +1개."
+  1518:
+    name: "황금 창"
+    description: "번개 바운스당 코인 +53.62%. 도구 사거리 +70%, 수집 범위 -55%."
+  1601:
+    name: "흐름 수로"
+    description: "슈트 배출 속도 +20%."
+  1225:
+    name: "캐시 플로우"
+    description: "용량의 25% 이상 찬 가방을 직접 비우면(최대 10,000개 기준) 8초간 포켓 뱅크 수집 속도가 50% 증가합니다."
+  1605:
+    name: "압력 밸브"
+    description: "슈트 배출 속도 +40%."
+  1527:
+    name: "고속 재충전"
+    description: "자기 펄스 재사용 대기시간: 6초 → 4초.\n수집 범위 +2.87%.\n도구 사거리 +3.75% (기본값 기준)."
+  1114:
+    name: "빈틈없는 포장 4"
+    description: "가방 용량 +24.98%.\n입금 속도 +10.13%."
+  1014:
+    name: "추가 한 쌍"
+    description: "{Primary}를 누르고 있는 동안 고스트 손 3개가 번갈아 가며 금을 모읍니다."
+  1015:
+    name: "연타 3"
+    description: "도구 속도 +5.23%.\n맨손 1회당 수집량 +11.05%."
+  1216:
+    name: "하층 호퍼 05"
+    description: "05층의 입금소를 해금합니다. 구역을 드러내면 사용할 수 있습니다.\n입금 속도 +9.51%.\n입금 가능 거리 +0.5m."
+  30523:
+    name: "자기 서지"
+    description: "자기 펄스가 바운스마다 더 많은 금을 수집하고 더 빨리 재충전됩니다. 연쇄는 코인 한도를 공유합니다."
+  30521:
+    name: "펄스 확산"
+    description: "자기 펄스 반경 +25%. 최종 반경 상한이 4.5m에서 5.625m로 늘어납니다."
+  1013:
+    name: "연타 2"
+    description: "도구 속도 +5.23%.\n맨손 1회당 수집량 +11.05%."
+  1604:
+    name: "보강 덕트"
+    description: "슈트 배출 속도 +80%."
+  15019:
+    name: "서지 용량"
+    description: "번개 바운스당 코인 +25.97%."
+  1423:
+    name: "넓은 삽 3"
+    description: "수집 범위 +25%.\n강타 기본 확률 +3%p (습득 시)."
+  1103:
+    name: "더 큰 가방 3"
+    description: "가방 용량 +150%."
+  1415:
+    name: "수북한 삽날 2"
+    description: "1회당 코인 +18.41%."
+  20501:
+    name: "고전압"
+    description: "1회당 코인 +29.06%."
+  1316:
+    name: "긴 사거리 3"
+    description: "도구 사거리 +8% (기본값 기준)."
+  UnlockShovel:
+    name: "삽 해금"
+    description: "{Tool2}로 삽을 장착해 금을 퍼담습니다. 이 도구를 사용하면 습득한 강타가 더 강해지고 더 자주 발동합니다."
+  1427:
+    name: "넓은 삽 6"
+    description: "수집 범위 +5.74%.\n강타 기본 확률 +3%p (습득 시)."
+  20401:
+    name: "단층선"
+    description: "강타 코인 +31.95%."
+  1201:
+    name: "빠른 입금 1"
+    description: "입금 속도 +80%."
+  13115:
+    name: "휩쓰는 사거리"
+    description: "수집 범위 +11.05%.\n도구 사거리 +6% (기본값 기준)."
+  1011:
+    name: "연타 1"
+    description: "도구 속도 +5.23%.\n맨손 1회당 수집량 +11.05%."
+  1516:
+    name: "전도 전류 6"
+    description: "번개 바운스당 코인 +10%."
+  HandTraining:
+    name: "한 번에 두 개"
+    description: "맨손이 한 번에 코인을 1개 대신 2개 수집합니다."
+  1121:
+    name: "손쉬운 입금 1"
+    description: "가방 용량 +15%.\n입금 가능 거리 +0.15m."
+  11019:
+    name: "보강 안감"
+    description: "가방 용량 +37.61%."
+  1022:
+    name: "안정된 손"
+    description: "그립 스위트 스폿이 0.015초 더 오래 지속됩니다."
+  1217:
+    name: "금고 도우미"
+    description: "드러나 있고 잠금 해제된 입금소 근처에서 자동으로 입금합니다. 입금하는 동안에도 도구를 계속 사용할 수 있습니다.\n입금 속도 +2.3%.\n입금 가능 거리 +0.13m."
+tooltip_regex:
+  '^RMB$': '우클릭'
+  '^FREEPLAY · Vault (\d+) cleared\. This time is not ranked\.$': '자유 플레이 · 금고 $1 클리어. 이 기록은 순위에 반영되지 않습니다.'
+  '^Pumping ([\d,.]+) coins$': '펌프 이체 중 · 코인 $1개'
+  '^Close(\s+)\[Q\]$': '닫기$1[Q]'
+  '^LMB$': '좌클릭'
+  '^Open the final coin lid$': '마지막 코인 뚜껑 열기'
+  '^Take the final coin$': '마지막 코인 가져가기'
+  '^E • CALL (\d+)$': 'E • $1층 호출'
+  '^CALL (\d+)$': '$1층 호출'
+  '^Your build  /  Hands$': '내 빌드  /  맨손'
+  '^Your build  /  Shovel$': '내 빌드  /  삽'
+  '^Your build  /  Magnet$': '내 빌드  /  자석'
+  '^Your build  /  (.+)$': '내 빌드  /  $1'
+  '^([\d,.]+)% faster$': '$1% 더 빠름'
+  '^([\d,.]+)% more coins$': '코인 $1% 증가'
+  '^([\d,.]+)% farther$': '$1% 더 멀리'
+  '^([\d,.]+)% wider$': '$1% 더 넓게'
+  '^([\d,.]+)% larger$': '$1% 증가'
+  '^Learn · ': '습득 · '
+  '^Maximum coins per impact with this tool; shovel has full heavy-strike strength\.$': '이 도구로 강타 1회에 얻는 최대 코인 수. 삽은 강타 위력을 100% 발휘합니다.'
+  '^Coin budget per bounce, shared across simultaneous chains; magnet has full lightning strength\.$': '바운스당 코인 한도(동시에 퍼지는 연쇄끼리 공유). 자석은 번개 위력을 100% 발휘합니다.'
+  '^Keep Playing refills now\.\nFurther clears do not count toward leaderboards\.$': "계속 플레이하면 지금 다시 채워집니다.\n이후 클리어는 순위표에 반영되지 않습니다."
+  '^English(\s*▾)$': '한국어$1'
+  '^v([\d.]+) · Current \(Recommended\)(\s*▾)?$': '$1 버전 · 최신 (권장)$2'
+  '^v([\d.]+) · Current(\s*▾)?$': '$1 버전 · 최신$2'
+  '^v([\d.]+) · Legacy(\s*▾)?$': '$1 버전 · 구버전$2'
+  '^Continue · v([\d.]+)$': '이어하기 · $1 버전'
+  '^Total banked: (.+)$': '총 보관량: $1'
+  '^Version (.+)$': '버전 $1'
+  '^\+([\d,.]+)% speed$': '+$1% 속도'
+  '^\+([\d,.]+) collected$': '+$1 수집'
+  '^\+([\d,.]+) bag capacity$': '가방 용량 +$1'
+  'Need ([\d,.]+) more proficiency points?': '숙련도 포인트 $1 더 필요'
+  '^Need ([\d,.]+) more collected coins$': '수집 코인 $1개 더 필요'
+  '^Slot (\d+)$': '슬롯 $1'
+  '^([\d,.]+) banked$': '$1 보관됨'
+  '^Bank ([\d,.]+) more coins$': '코인 $1개 더 보관하기'
+  '^Pump in ([\d,.]+)s$': '펌프까지 $1초'
+  '^Pump banked ([\d,.]+)$': '펌프 보관 $1'
+  '^Unloading · ([\d,.]+) coins left$': '입금 중 · 남은 코인 $1개'
+  '^POP! ([\d,.]+) coins spilled$': '펑! 코인 $1개 쏟아짐'
+  '^([\d,.]+) spilled · walk over to recover$': '$1개 쏟아짐 · 위를 걸어서 회수'
+  '^Cash flow · ([\d,.]+)s$': '캐시 플로우 · $1초'
+  '^Jackhammer · ([\d,.]+)s$': '잭해머 · $1초'
+  '^Magnet pulse · ([\d,.]+)s$': '자기 펄스 · $1초'
+  '^Power scoop · ([\d,.]+)s$': '파워 퍼담기 · $1초'
+  '^Two-handed grip · ([\d,.]+)s$': '양손 그립 · $1초'
+  '^Repairing · ([\d,.]+)s$': '수리 중 · $1초'
+  '^JACKHAMMER · ([\d,.]+)x DROP$': '잭해머 · 낙하 $1배'
+  '^Anchor · (\d+) pulses left$': '고정 · 펄스 $1회 남음'
+  '^CHAIN (\d+)$': '연쇄 $1'
+  '^Master grip ×(\d+)$': '마스터 그립 ×$1'
+  '^PERFECT GRIP · STREAK ': '완벽한 양손 그립 · 연속 '
+  '^([\d,.]+) coins/sec$': '$1 코인/초'
+  '^([\d,.]+) coins / sec$': '$1 코인/초'
+  '^([\d,.]+) coins/click$': '$1 코인/클릭'
+  '^([\d,.]+) / second$': '$1 / 초'
+  '^([\d,.]+) m / sec$': '$1 m / 초'
+  '^([\d,.]+) coins?$': '코인 $1개'
+  '^([\d,.]+) more coins$': '코인 $1개 더'
+  '^([\d,.]+)x base deposit speed$': '기본 입금 속도 $1배'
+  '^Skill tree: (.+)$': '스킬 트리: $1'
+  '^Continue · (.+)$': '이어하기 · $1'
+  '^Locked by (.+)$': '$1에 의해 잠김'
+  '^Play time (.+) \+ ([\d,.]+)s unstuck penalty$': '플레이 시간 $1 + 끼임 탈출 페널티 $2초'
+  '^Global momentum: up to \+([\d,.]+)% tool speed\.$': '전역 모멘텀: 도구 속도 최대 +$1%'
+  '^(.+) · Bonus active$': '$1 · 보너스 적용 중'
+  '^(\d+) OWNED  /  BONUSES APPLY AUTOMATICALLY$': '$1개 보유  /  보너스 자동 적용'
+  '^(\d+) OWNED  /  DOUBLE-CLICK A TOOL TO EQUIP$': '$1개 보유  /  도구를 더블 클릭해 장착'
+  '^(\d+) OWNED  /  YOUR LITTLE TREASURES$': '$1개 보유  /  작은 보물들'
+  '^Banking · ': '보관 · '
+  '^Coins saved · Steam sync in ': '코인 저장됨 · Steam 동기화까지 '
+  '(\bHands\b)\s*[^a-zA-Z0-9\s]\s*with your upgrades': '맨손 · 적용 중인 강화'
+  '(\bShovel\b)\s*[^a-zA-Z0-9\s]\s*with your upgrades': '삽 · 적용 중인 강화'
+  '(\bMagnet\b)\s*[^a-zA-Z0-9\s]\s*with your upgrades': '자석 · 적용 중인 강화'
+  '(\b[a-zA-Z]+\b)\s*[^a-zA-Z0-9\s]\s*with your upgrades': '$1 · 적용 중인 강화'
+  '[^a-zA-Z0-9\s]\s*with your upgrades': ' · 적용 중인 강화'
+  '(\d+)\s+points?\s*·\s*Requires\s+': '$1 포인트 · 필요: '
+  'Requires\s+': '필요: '
+  '(\d+)\s+points?\s*·\s*Click node to learn': '$1 포인트 · 클릭하여 습득'
+  '(\d+)\s+points?\s*·\s*': '$1 포인트 · '
+  '(\d+)\s+POINT(S)?': '$1 포인트'
+  '(\d+)\s+POINTS SPENT': '$1 포인트 사용됨'
+
+tooltip_strings:
+  "Upgrade effect on Hands:": "맨손 강화 효과:"
+  "Upgrade effect on Shovel:": "삽 강화 효과:"
+  "Upgrade effect on Magnet:": "자석 강화 효과:"
+  "Pocket Bank radius:": "포켓 뱅크 반경:"
+  "Pocket Bank range:": "포켓 뱅크 범위:"
+  "Bank radius:": "뱅크 반경:"
+  "Pickup radius:": "수집 범위:"
+  "Ghost hands take turns:": "고스트 손 교대:"
+  "Ghost hands:": "고스트 손:"
+  "Grip bag share:": "그립 가방 비율:"
+  "Grip base harvest:": "그립 기본 수집량:"
+  "Heavy Strike base chance:": "강타 기본 확률:"
+  "Heavy Strike base harvest:": "강타 기본 수집량:"
+  "Heavy Strike:": "강타:"
+  "Jackhammer coin limit:": "잭해머 수집 한도:"
+  "Jackhammer power:": "잭해머 위력:"
+  "Jackhammer radius:": "잭해머 반경:"
+  "Jackhammer:": "잭해머:"
+  "Lightning base chance:": "번개 기본 확률:"
+  "Lightning bounces:": "번개 바운스 횟수:"
+  "Lightning chains:": "번개 연쇄 수:"
+  "Lightning:": "번개:"
+  "Magnetic Pulse cooldown:": "자기 펄스 재사용 대기시간:"
+  "Magnetic Pulse:": "자기 펄스:"
+  "Pulse coins per bounce:": "펄스 바운스당 코인:"
+  "Pump interval:": "펌프 간격:"
+  "Pump:": "펌프:"
+  "Learn prerequisites to see your stat changes.": "능력치 변화를 보려면 선행 스킬을 습득하세요."
+  "Click node to learn": "클릭하여 습득"
+  "Press submit to learn": "결정 버튼으로 습득"
+  "NEW MECHANIC": "새 기능 해금"
+  "MASTERY": "마스터리"
+  "IMPROVEMENT": "능력 강화"
+  "Not learned in this build": "현재 빌드에서 미습득"
+  "These upgrades are working for you. Explore another route when you are ready.": "습득한 강화가 적용 중입니다. 준비가 되면 다른 경로를 탐색해 보세요."
+  "Route complete": "경로 완료"
+  "BRANCH ENTRY": "분기 입구"
+  "START HERE": "여기서 시작"
+  "Hands <size=16>(Tool)</size>": "맨손 <size=16>(도구)</size>"
+  "Shovel <size=16>(Tool)</size>": "삽 <size=16>(도구)</size>"
+  "Magnet <size=16>(Tool)</size>": "자석 <size=16>(도구)</size>"
+  "With your upgrades": "적용 중인 강화"
+  " • with your upgrades": " • 적용 중인 강화"
+  "with your upgrades": "적용 중인 강화"
+  "Scoop coin limit:": "삽 수집 한도:"
+  "Scoop radius:": "삽 수집 반경:"
+  "Normal scoops resume after 1s": "1초 후 일반 삽 수집 복귀"
+  "Normal scoops resume after:": "일반 삽 수집 복귀 시간:"
+  "Slam coin limit:": "슬램 수집 한도:"
+  "Slam radius:": "슬램 반경:"
+  "Digging depth:": "굴착 깊이:"
+  "Leap range: 25 m": "도약 거리: 25m"
+  "Coins per scoop:": "1회당 삽 수집량:"
+  "Time between scoops:": "삽 수집 간격:"
+  "Coins per bounce (shared):": "바운스당 코인 (공유):"
+  "Coins per bounce:": "바운스당 코인:"
+  "Strike coin limit:": "강타 수집 한도:"
+  "Collection radius:": "수집 반경:"
+  "Chance per ready pickup:": "준비된 수집당 발동 확률:"
+  "Guaranteed within:": "확정 발동까지:"
+  " ready pickups": "회 준비된 수집"
+  "Starting bounces:": "시작 바운스 횟수:"
+  "Chance of another bounce:": "추가 바운스 확률:"
+  "Jump distance:": "점프 거리:"
+  "Chains:": "연쇄 수:"
+  "Gold Rush duration:": "골드 러시 지속 시간:"
+  "Automatic collection rate:": "자동 수집 속도:"
+  "Automatic rate cap:": "자동 속도 상한:"
+  "Manual unload speed:": "수동 입금 속도:"
+  "% of station": "% (입금소 대비)"
+  "Minimum manual deposit:": "최소 수동 입금량:"
+  "During Cash flow:": "캐시 플로우 중:"
+  " coins/s": " 코인/초"
+  "Coins per ghost grab:": "고스트 1회당 수집량:"
+  "Time between grabs:": "수집 간격:"
+  "Full Flow: 6 hands, one grab every 0.1s": "최대 플로우: 손 6개, 0.1초마다 1회 수집"
+  "Hands radius (grip excluded):": "맨손 반경 (그립 제외):"
+  "Shovel/Magnet helpers: 30% fewer coins": "삽/자석 도우미: 코인 30% 감소"
+  "Coin limit at max levels:": "최대 레벨 시 수집 한도:"
+  "Radius at max levels:": "최대 레벨 시 반경:"
+  "Maximum levels:": "최대 레벨:"
+  "Per level: +20% base coins, +5% base radius": "레벨당: 기본 코인 +20%, 기본 반경 +5%"
+  "Sweet spot: 0.01s shorter per level": "레벨당 스위트 스폿 -0.01초"
+  "Sweet spot at level 0:": "레벨 0 스위트 스폿:"
+  "Grip coin limit:": "그립 수집 한도:"
+  "Grip radius:": "그립 반경:"
+  "Sweet spot starts at:": "스위트 스폿 시작:"
+  "Sweet spot length:": "스위트 스폿 지속 시간:"
+  "Normal pickups resume after:": "일반 수집 복귀 시간:"
+  "Recharge after a miss:": "실패 후 재충전:"
+  "Recharge:": "재충전 시간:"
+  "Cooldown: 40s": "재사용 대기시간: 40초"
+  "Cooldown: 4s": "재사용 대기시간: 4초"
+  "Cooldown: 3s": "재사용 대기시간: 3초"
+  "Cooldown:": "재사용 대기시간:"
+  "All tool coins per pickup": "모든 도구 1회당 수집량"
+  "All tool pickup radius": "모든 도구 수집 반경"
+  "All tool speed": "모든 도구 속도"
+  "Hands coins per grab": "맨손 1회당 수집량"
+  "Heavy Strike coin limit": "강타 수집 한도"
+  "Lightning coin limit": "번개 수집 한도"
+  "Lightning jump distance": "번개 점프 거리"
+  "Tool reach +": "도구 사거리 +"
+  "Tool reach": "도구 사거리"
+  "% of base": "% (기본값 기준)"
+  "Deposit speed": "입금 속도"
+  "Bag capacity": "가방 용량"
