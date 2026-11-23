@@ -988,6 +988,22 @@ ui:
   "Save slots": "저장 슬롯"
   "Empty slot": "빈 슬롯"
   "Slot name (optional)": "슬롯 이름 (선택)"
+  "Rename": "이름 바꾸기"
+  "General": "일반"
+  "Sound": "사운드"
+  "Video": "화면"
+  "Show timer": "타이머 표시"
+  "Allow background play": "백그라운드 플레이 허용"
+  "Automation and the run timer continue while you use other windows.": "다른 창을 쓰는 동안에도 자동화와 기록 타이머가 계속 돌아갑니다."
+  "Resolution": "해상도"
+  "Apply": "적용"
+  "Borderless uses the desktop resolution.": "테두리 없는 창은 바탕 화면 해상도를 사용합니다."
+  "VSync": "수직 동기화"
+  "Render scale": "렌더링 배율"
+  "Shadow quality": "그림자 품질"
+  "Low": "낮음"
+  "Medium": "중간"
+  "High": "높음"
   "v1.2 · Current (Recommended)": "1.2 버전 · 최신 (권장)"
   "v1.1 · Current": "1.1 버전 · 최신"
   "v1.1 · Legacy": "1.1 버전 · 구버전"
@@ -1012,7 +1028,7 @@ skills:
     name: "익스프레스 카운터"
     description: "포켓 뱅크에 일반 입금소 속도의 75%로 입금할 수 있습니다."
   30511:
-    name: "활선"
+    name: "고압선"
     description: "번개가 적중할 때마다 코인을 50% 더 수집합니다."
   1107:
     name: "더 큰 가방 7"
@@ -1052,13 +1068,13 @@ skills:
     description: "입금 속도 +100%.\n입금 가능 거리 +1.5m."
   1018:
     name: "총동원"
-    description: "플로우가 최대일 때 여섯 번째 고스트 손이 합류하고 손들이 더 빠르게 수집합니다. {Primary}를 계속 누르고 있으면 수집합니다."
+    description: "플로우가 최대일 때 여섯 번째 고스트 손이 합류하고 손들이 더 빠르게 수집합니다. [{Primary}] 버튼을 계속 누르고 있으면 수집합니다."
   30201:
     name: "더 긴 러시"
     description: "입금 속도 +15.61%.\n골드 러시 지속 시간 +5초."
   1224:
     name: "지역 지점"
-    description: "포켓 뱅크가 더 먼 곳에서 수집합니다. 3m 이내에서 {Interact}를 누르고 있으면 일반 속도의 절반으로 입금합니다."
+    description: "포켓 뱅크가 더 먼 곳에서 수집합니다. 3m 이내에서 [{Interact}] 키를 누르고 있으면 일반 속도의 절반으로 입금합니다."
   30101:
     name: "금고 안감"
     description: "가방 용량 +33.11%."
@@ -1079,7 +1095,7 @@ skills:
     description: "가방 용량 +9.32%.\n입금 가능 거리 +0.11m."
   1012:
     name: "도움의 손길"
-    description: "{Primary}를 누르고 있으면 고스트 손이 함께 수집합니다. 더 강하고 빠른 도구일수록 고스트 손의 수집량이 늘어납니다. 습득한 강타와 번개 효과도 발동시킬 수 있습니다."
+    description: "[{Primary}] 버튼을 누르고 있으면 고스트 손이 함께 수집합니다. 더 강하고 빠른 도구일수록 고스트 손의 수집량이 늘어납니다. 습득한 강타와 번개 효과도 발동시킬 수 있습니다."
   11015:
     name: "깊은 비축"
     description: "가방 용량 +79.34%."
@@ -1172,7 +1188,7 @@ skills:
     description: "도구 사거리 +8% (기본값 기준)."
   1016:
     name: "분주한 손들"
-    description: "고스트 손 5개가 주변의 금을 찾아 수집합니다. 직접 조준하지 않아도 됩니다. {Primary}를 계속 누르고 있으면 수집합니다."
+    description: "고스트 손 5개가 주변의 금을 찾아 수집합니다. 직접 조준하지 않아도 됩니다. [{Primary}] 버튼을 계속 누르고 있으면 수집합니다."
   1608:
     name: "흡입 터빈"
     description: "슈트 배출 속도 +100%."
@@ -1325,7 +1341,7 @@ skills:
     description: "도구 속도 +8.55%."
   1522:
     name: "자기 펄스"
-    description: "자석을 든 상태에서 {Secondary}를 누르면 주변 금으로 번개를 발사합니다. 더 강한 수집력과 번개 강화가 수집량을 늘립니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
+    description: "자석을 든 상태에서 [{Secondary}] 버튼을 누르면 주변 금으로 번개를 발사합니다. 더 강한 수집력과 번개 강화가 수집량을 늘립니다. 연쇄는 바운스마다 코인 한도를 공유합니다."
   1218:
     name: "호퍼 마스터리"
     description: "입금 속도 +7.05%.\n입금 가능 거리 +0.38m."
@@ -1346,7 +1362,7 @@ skills:
     description: "도구 속도 +10.96%."
   1222:
     name: "포켓 뱅크"
-    description: "{Tool4}로 포켓 뱅크를 장착합니다. {Primary}를 눌렀다 떼어 설치하고, 근처에서 {Relocate}를 누르고 있으면 회수합니다. 주변에 보이는 금을 자동으로 보관합니다. 가방이 클수록 속도가 빨라집니다."
+    description: "[{Tool4}] 키로 포켓 뱅크를 장착합니다. [{Primary}] 버튼을 눌렀다 떼어 설치하고, 근처에서 [{Relocate}] 키를 누르고 있으면 회수합니다. 주변에 보이는 금을 자동으로 보관합니다. 가방이 클수록 속도가 빨라집니다."
   30221:
     name: "두 배의 수익"
     description: "포켓 뱅크의 자동 수집 속도 +100% (최대 속도 포함). 범위 안에 보이는 금에 따라 제한됩니다."
@@ -1382,7 +1398,7 @@ skills:
     description: "가방 용량 +12.61%.\n입금 가능 거리 +0.15m."
   1412:
     name: "잭해머"
-    description: "삽을 든 상태에서 {Secondary}를 0.65초간 누르면 조준 방향으로 도약해 착지 시 내려찍습니다. 높이 떨어질수록 충격이 강해집니다. 파워 퍼담기를 대체합니다. 최대 반경: 15m (낙하 포함)."
+    description: "삽을 든 상태에서 [{Secondary}] 버튼을 0.65초간 누르면 조준 방향으로 도약해 착지 시 내려찍습니다. 높이 떨어질수록 충격이 강해집니다. 파워 퍼담기를 대체합니다. 최대 반경: 15m (낙하 포함)."
   1418:
     name: "굴착기"
     description: "도구 속도 -22.78%.\n1회당 코인 +88.03%."
@@ -1469,7 +1485,7 @@ skills:
     description: "입금 속도 +24.45%.\n입금 가능 거리 +1m."
   1528:
     name: "대소용돌이"
-    description: "수집 범위 +100%. 도구 사거리 +3.75% (기본값 기준) 후, 전체 사거리가 35% 감소합니다."
+    description: "수집 범위 +100%. 도구 사거리 +3.75% (기본값 기준). 단, 최종 사거리는 35% 줄어듭니다."
   30111:
     name: "완벽한 포장"
     description: "가방 용량 +49.11%.\n입금 속도 +15.61%."
@@ -1559,13 +1575,13 @@ skills:
     description: "완벽한 양손 그립(스위트 스폿에서 성공)의 수집량이 늘어납니다. 수집량은 여전히 주변의 금과 남은 가방 공간에 따라 달라집니다."
   1411:
     name: "파워 퍼담기"
-    description: "삽을 든 상태에서 {Secondary}를 0.65초간 누른 뒤 떼면 더 강하고 넓게 퍼담습니다. 주변의 금과 가방 공간에 따라 제한됩니다."
+    description: "삽을 든 상태에서 [{Secondary}] 버튼을 0.65초간 누른 뒤 떼면 더 강하고 넓게 퍼담습니다. 주변의 금과 가방 공간에 따라 제한됩니다."
   30321:
     name: "깊은 펌프"
     description: "펌프 1회마다 가방 용량의 5%를 추가로 가방에서 뱅크로 옮깁니다."
   1021:
     name: "양손 그립"
-    description: "맨손을 든 상태에서 {Secondary}를 누르고 스위트 스폿에서 떼면(완벽한 양손 그립) 대량으로 수집합니다. 수집력이 강하고 가방이 클수록 코인 한도가 늘어납니다. 주변의 금과 가방 공간이 필요합니다."
+    description: "맨손을 든 상태에서 [{Secondary}] 버튼을 누르고 스위트 스폿에서 떼면(완벽한 양손 그립) 대량으로 수집합니다. 수집력이 강하고 가방이 클수록 코인 한도가 늘어납니다. 주변의 금과 가방 공간이 필요합니다."
   30423:
     name: "우르릉 천둥"
     description: "수집 범위 +25%.\n강타 코인 +14.41%."
@@ -1634,7 +1650,7 @@ skills:
     description: "가방 용량 +24.98%.\n입금 속도 +10.13%."
   1014:
     name: "추가 한 쌍"
-    description: "{Primary}를 누르고 있는 동안 고스트 손 3개가 번갈아 가며 금을 모읍니다."
+    description: "[{Primary}] 버튼을 누르고 있는 동안 고스트 손 3개가 번갈아 가며 금을 모읍니다."
   1015:
     name: "연타 3"
     description: "도구 속도 +5.23%.\n맨손 1회당 수집량 +11.05%."
@@ -1673,7 +1689,7 @@ skills:
     description: "도구 사거리 +8% (기본값 기준)."
   UnlockShovel:
     name: "삽 해금"
-    description: "{Tool2}로 삽을 장착해 금을 퍼담습니다. 이 도구를 사용하면 습득한 강타가 더 강해지고 더 자주 발동합니다."
+    description: "[{Tool2}] 키로 삽을 들고 금을 퍼담습니다. 이 도구를 사용하면 습득한 강타가 더 강해지고 더 자주 발동합니다."
   1427:
     name: "넓은 삽 6"
     description: "수집 범위 +5.74%.\n강타 기본 확률 +3%p (습득 시)."
@@ -1713,6 +1729,8 @@ tooltip_regex:
   '^Pumping ([\d,.]+) coins$': '펌프 이체 중 · 코인 $1개'
   '^Close(\s+)\[Q\]$': '닫기$1[Q]'
   '^LMB$': '좌클릭'
+  '^Reach: ([\d.]+) ?m$': '사거리: $1m'
+  '^([\d.]+)s$': '$1초'
   '^Open the final coin lid$': '마지막 코인 뚜껑 열기'
   '^Take the final coin$': '마지막 코인 가져가기'
   '^E • CALL (\d+)$': 'E • $1층 호출'
@@ -1730,10 +1748,12 @@ tooltip_regex:
   '^Maximum coins per impact with this tool; shovel has full heavy-strike strength\.$': '이 도구로 강타 1회에 얻는 최대 코인 수. 삽은 강타 위력을 100% 발휘합니다.'
   '^Coin budget per bounce, shared across simultaneous chains; magnet has full lightning strength\.$': '바운스당 코인 한도(동시에 퍼지는 연쇄끼리 공유). 자석은 번개 위력을 100% 발휘합니다.'
   '^Keep Playing refills now\.\nFurther clears do not count toward leaderboards\.$': "계속 플레이하면 지금 다시 채워집니다.\n이후 클리어는 순위표에 반영되지 않습니다."
-  '^English(\s*▾)$': '한국어$1'
-  '^v([\d.]+) · Current \(Recommended\)(\s*▾)?$': '$1 버전 · 최신 (권장)$2'
-  '^v([\d.]+) · Current(\s*▾)?$': '$1 버전 · 최신$2'
-  '^v([\d.]+) · Legacy(\s*▾)?$': '$1 버전 · 구버전$2'
+  '^English(\s*[▾▴])$': '한국어$1'
+  '^v([\d.]+) · Current \(Recommended\)(\s*[▾▴])?$': '$1 버전 · 최신 (권장)$2'
+  '^v([\d.]+) · Current(\s*[▾▴])?$': '$1 버전 · 최신$2'
+  '^v([\d.]+) · Legacy(\s*[▾▴])?$': '$1 버전 · 구버전$2'
+  '^This replaces progress in Slot (\d+) only\.\nSkill tree: v([\d.]+)$': "슬롯 $1의 진행 상황만 새로 시작합니다.\n스킬 트리: $2 버전"
+  '^v([\d.]+) · ([\d,]+) coins · ([\d:]+) played$': '$1 버전 · 코인 $2개 · $3 플레이'
   '^Continue · v([\d.]+)$': '이어하기 · $1 버전'
   '^Total banked: (.+)$': '총 보관량: $1'
   '^Version (.+)$': '버전 $1'
@@ -1741,7 +1761,7 @@ tooltip_regex:
   '^\+([\d,.]+) collected$': '+$1 수집'
   '^\+([\d,.]+) bag capacity$': '가방 용량 +$1'
   'Need ([\d,.]+) more proficiency points?': '숙련도 포인트 $1 더 필요'
-  '^Need ([\d,.]+) more collected coins$': '수집 코인 $1개 더 필요'
+  'Need ([\d,.]+) more collected coins': '수집 코인 $1개 더 필요'
   '^Slot (\d+)$': '슬롯 $1'
   '^([\d,.]+) banked$': '$1 보관됨'
   '^Bank ([\d,.]+) more coins$': '코인 $1개 더 보관하기'
@@ -1845,8 +1865,9 @@ tooltip_strings:
   "Slam radius:": "슬램 반경:"
   "Digging depth:": "굴착 깊이:"
   "Leap range: 25 m": "도약 거리: 25m"
-  "Coins per scoop:": "1회당 삽 수집량:"
+  "Coins per scoop:": "삽 1회 수집량:"
   "Time between scoops:": "삽 수집 간격:"
+  "Reach:": "사거리:"
   "Coins per bounce (shared):": "바운스당 코인 (공유):"
   "Coins per bounce:": "바운스당 코인:"
   "Strike coin limit:": "강타 수집 한도:"
@@ -1866,7 +1887,7 @@ tooltip_strings:
   "Minimum manual deposit:": "최소 수동 입금량:"
   "During Cash flow:": "캐시 플로우 중:"
   " coins/s": " 코인/초"
-  "Coins per ghost grab:": "고스트 1회당 수집량:"
+  "Coins per ghost grab:": "고스트 손 1회 수집량:"
   "Time between grabs:": "수집 간격:"
   "Full Flow: 6 hands, one grab every 0.1s": "최대 플로우: 손 6개, 0.1초마다 1회 수집"
   "Hands radius (grip excluded):": "맨손 반경 (그립 제외):"
